@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\private\\basicamo.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\x64\\projectrdeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\projectrd\\definitions.projectrd.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\public\\basicamo.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\public\\amo.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\unrealeditor\\inc\\projectrd\\uht\\amo.generated.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\unrealeditor\\inc\\projectrd\\uht\\basicamo.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

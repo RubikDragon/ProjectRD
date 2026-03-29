@@ -1,0 +1,25 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Map/BasicMap.umap",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/Prefab/Player.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/Prefab/MetalAmo.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/UI/PlayerHud.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/GameMode/RDGameMode.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/VisualEffetck/BulletVisualEffet.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/Input/PlayerInputMapping.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/Input/JumpAction.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/Input/ChartureMovemmentAction.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/Input/CameraMovemmentAction.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/Input/ShootAction.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/Input/ReloadAction.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/Prefab/PlayerControllerRD.uasset",
+				"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Content/Blueprint/UI/Statebar.uasset"
+			]
+		}
+	]
+}

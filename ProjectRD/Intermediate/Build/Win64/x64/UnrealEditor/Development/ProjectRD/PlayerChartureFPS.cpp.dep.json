@@ -1,0 +1,28 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\private\\playercharturefps.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\x64\\projectrdeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\projectrd\\definitions.projectrd.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\public\\playercharturefps.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\public\\fpssystem.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\unrealeditor\\inc\\projectrd\\uht\\fpssystem.generated.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\unrealeditor\\inc\\projectrd\\uht\\playercharturefps.generated.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\camera\\cameracomponent.h",
+            "c:\\program files\\ue\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\cameracomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

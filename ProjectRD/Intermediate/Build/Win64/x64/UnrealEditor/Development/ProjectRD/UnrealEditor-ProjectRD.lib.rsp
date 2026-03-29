@@ -1,0 +1,27 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ProjectRD.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/ProjectRDEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/Module.ProjectRD.gen.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/ProjectRD.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/Amo.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/BasicAmo.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/BlueprintTools.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/BulletRD.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/FPSSystem.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/HealtSystem.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/PlayerChartureFPS.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/PlayerControllerFPS.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/RDCustomUI.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/StateBar.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/TelecanentickChatrureFPS.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/TelekanatickActorFPS.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/TelekanatickFPS.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/PerModuleInline.gen.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/Default.rc2.res"
+/OUT:"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/UnrealEditor-ProjectRD.lib"
