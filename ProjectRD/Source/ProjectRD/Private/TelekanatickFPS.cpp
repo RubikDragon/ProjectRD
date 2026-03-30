@@ -12,11 +12,6 @@ UTelekanatickFPS::UTelekanatickFPS()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
-	shotSpawnPorstion = CreateDefaultSubobject<USceneComponent>(TEXT("REAL"));
-
-	reloadRadiose = CreateDefaultSubobject<USphereComponent>(TEXT("Reload Radiose"));
-
 }
 
 // Called when the game starts
@@ -26,35 +21,29 @@ void UTelekanatickFPS::BeginPlay()
 
 	reloadRadiose->SetupAttachment(GetOwner()->GetRootComponent());
 
-	currentAmo = minAmo;	
+	currentAmo = minAmo;
 }
 
-void UTelekanatickFPS::Shoot(USceneComponent* spawnLoaction)
+void UTelekanatickFPS::Shoot_Implementation()
 {
-	// makes sure we have enyof amo to shoot
-	if (currentAmo <= minAmo || !canShot || !spawnLoaction)
-		return;
-
-	//spawnPrams.Instigator = this;
-	// spawnPrams.OverrideLevel      i know this is inportan. but i don,t know why jet
-
-	// FRotator::ZeroRotator == masikly Quternion Identfyer
-
-	//UE_LOG(LogTemp, Display, TEXT("shot fromName: %s Location: %s"), *spawnLoaction->GetComponentLocation().ToString(), *spawnLoaction->GetName());
-	spawnedBullet = GetWorld()->SpawnActor<AActor>(bullet, spawnLoaction->GetComponentLocation(), spawnLoaction->GetComponentRotation());
-	ChangeAmo(-1);
-
-	// incase you want to pass a property then at 9:49 it is showen https://www.youtube.com/watch?v=CJkKovxDkc4&list=PLoReGgpfex3z12PPCPK7W76Y2q1KNQtxH&index=8  
-	// sets a timer betvine shots
-	canShot = false;
-	GetWorld()->GetTimerManager().SetTimer(timerHandle, this, &UTelekanatickFPS::ResetCanShot, timeBetinveShots);
+	UE_LOG(LogTemp, Display, TEXT("Was callede all fine"))
 }
+
+void UTelekanatickFPS::Reload_Implementation()
+{
+
+}
+
+void UTelekanatickFPS::SetBulletSpawnPorstion_Implementation(USceneComponent* SceneComponent)
+{
+
+}
+
+
 
 void UTelekanatickFPS::ResetCanShot()
 {
 	canShot = true;
-
-
 }
 
 void UTelekanatickFPS::TelekanetickReload()

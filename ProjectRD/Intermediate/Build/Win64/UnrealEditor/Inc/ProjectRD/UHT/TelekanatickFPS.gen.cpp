@@ -13,13 +13,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTelekanatickFPS() {}
 
 // ********** Begin Cross Module References ********************************************************
-COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTimerHandle();
-PROJECTRD_API UClass* Z_Construct_UClass_ABulletRD_NoRegister();
+PROJECTRD_API UClass* Z_Construct_UClass_UFPSSystem_NoRegister();
 PROJECTRD_API UClass* Z_Construct_UClass_UTelekanatickFPS();
 PROJECTRD_API UClass* Z_Construct_UClass_UTelekanatickFPS_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ProjectRD();
@@ -96,51 +95,6 @@ DEFINE_FUNCTION(UTelekanatickFPS::execResetCanShot)
 }
 // ********** End Class UTelekanatickFPS Function ResetCanShot *************************************
 
-// ********** Begin Class UTelekanatickFPS Function Shoot ******************************************
-struct Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics
-{
-	struct TelekanatickFPS_eventShoot_Parms
-	{
-		USceneComponent* spawnLoaction;
-	};
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/TelekanatickFPS.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_spawnLoaction_MetaData[] = {
-		{ "EditInline", "true" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_spawnLoaction;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static const UECodeGen_Private::FFunctionParams FuncParams;
-};
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::NewProp_spawnLoaction = { "spawnLoaction", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TelekanatickFPS_eventShoot_Parms, spawnLoaction), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_spawnLoaction_MetaData), NewProp_spawnLoaction_MetaData) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::NewProp_spawnLoaction,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UTelekanatickFPS, nullptr, "Shoot", Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::PropPointers), sizeof(Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::TelekanatickFPS_eventShoot_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::Function_MetaDataParams), Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::Function_MetaDataParams)},  };
-static_assert(sizeof(Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::TelekanatickFPS_eventShoot_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UTelekanatickFPS_Shoot()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UTelekanatickFPS_Shoot_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-DEFINE_FUNCTION(UTelekanatickFPS::execShoot)
-{
-	P_GET_OBJECT(USceneComponent,Z_Param_spawnLoaction);
-	P_FINISH;
-	P_NATIVE_BEGIN;
-	P_THIS->Shoot(Z_Param_spawnLoaction);
-	P_NATIVE_END;
-}
-// ********** End Class UTelekanatickFPS Function Shoot ********************************************
-
 // ********** Begin Class UTelekanatickFPS Function TelekanetickReload *****************************
 struct Z_Construct_UFunction_UTelekanatickFPS_TelekanetickReload_Statics
 {
@@ -177,7 +131,6 @@ void UTelekanatickFPS::StaticRegisterNativesUTelekanatickFPS()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "ChangeAmo", &UTelekanatickFPS::execChangeAmo },
 		{ "ResetCanShot", &UTelekanatickFPS::execResetCanShot },
-		{ "Shoot", &UTelekanatickFPS::execShoot },
 		{ "TelekanetickReload", &UTelekanatickFPS::execTelekanetickReload },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -220,13 +173,15 @@ struct Z_Construct_UClass_UTelekanatickFPS_Statics
 		{ "IncludePath", "TelekanatickFPS.h" },
 		{ "ModuleRelativePath", "Public/TelekanatickFPS.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bullet_MetaData[] = {
-		{ "Category", "_RD|Amo" },
-		{ "ModuleRelativePath", "Public/TelekanatickFPS.h" },
-	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_hitDamage_MetaData[] = {
 		{ "Category", "_RD|Amo" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = \"_RD|Amo\") TSubclassOf<class ABulletRD> bullet;\n" },
+#endif
 		{ "ModuleRelativePath", "Public/TelekanatickFPS.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = \"_RD|Amo\") TSubclassOf<class ABulletRD> bullet;" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_maxAmo_MetaData[] = {
 		{ "Category", "_RD|Amo" },
@@ -288,7 +243,6 @@ struct Z_Construct_UClass_UTelekanatickFPS_Statics
 		{ "ModuleRelativePath", "Public/TelekanatickFPS.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FClassPropertyParams NewProp_bullet;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_hitDamage;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_maxAmo;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_reloadTime;
@@ -311,16 +265,15 @@ struct Z_Construct_UClass_UTelekanatickFPS_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UTelekanatickFPS_ChangeAmo, "ChangeAmo" }, // 3034311225
 		{ &Z_Construct_UFunction_UTelekanatickFPS_ResetCanShot, "ResetCanShot" }, // 1412865521
-		{ &Z_Construct_UFunction_UTelekanatickFPS_Shoot, "Shoot" }, // 227224746
 		{ &Z_Construct_UFunction_UTelekanatickFPS_TelekanetickReload, "TelekanetickReload" }, // 1923396857
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UTelekanatickFPS>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_bullet = { "bullet", nullptr, (EPropertyFlags)0x0024080000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTelekanatickFPS, bullet), Z_Construct_UClass_UClass, Z_Construct_UClass_ABulletRD_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bullet_MetaData), NewProp_bullet_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_hitDamage = { "hitDamage", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTelekanatickFPS, hitDamage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_hitDamage_MetaData), NewProp_hitDamage_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_maxAmo = { "maxAmo", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTelekanatickFPS, maxAmo), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_maxAmo_MetaData), NewProp_maxAmo_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_reloadTime = { "reloadTime", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTelekanatickFPS, reloadTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_reloadTime_MetaData), NewProp_reloadTime_MetaData) };
@@ -345,7 +298,6 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTelekanatickF
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_inReloadRadios_Inner = { "inReloadRadios", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_inReloadRadios = { "inReloadRadios", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTelekanatickFPS, inReloadRadios), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_inReloadRadios_MetaData), NewProp_inReloadRadios_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTelekanatickFPS_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_bullet,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_hitDamage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_maxAmo,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTelekanatickFPS_Statics::NewProp_reloadTime,
@@ -368,6 +320,9 @@ UObject* (*const Z_Construct_UClass_UTelekanatickFPS_Statics::DependentSingleton
 	(UObject* (*)())Z_Construct_UPackage__Script_ProjectRD,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UTelekanatickFPS_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UTelekanatickFPS_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UFPSSystem_NoRegister, (int32)VTABLE_OFFSET(UTelekanatickFPS, IFPSSystem), false },  // 836489139
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UTelekanatickFPS_Statics::ClassParams = {
 	&UTelekanatickFPS::StaticClass,
 	"Engine",
@@ -375,11 +330,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UTelekanatickFPS_Static
 	DependentSingletons,
 	FuncInfo,
 	Z_Construct_UClass_UTelekanatickFPS_Statics::PropPointers,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_UTelekanatickFPS_Statics::PropPointers),
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UTelekanatickFPS_Statics::Class_MetaDataParams), Z_Construct_UClass_UTelekanatickFPS_Statics::Class_MetaDataParams)
 };
@@ -399,10 +354,10 @@ UTelekanatickFPS::~UTelekanatickFPS() {}
 struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTelekanatickFPS, UTelekanatickFPS::StaticClass, TEXT("UTelekanatickFPS"), &Z_Registration_Info_UClass_UTelekanatickFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTelekanatickFPS), 754536694U) },
+		{ Z_Construct_UClass_UTelekanatickFPS, UTelekanatickFPS::StaticClass, TEXT("UTelekanatickFPS"), &Z_Registration_Info_UClass_UTelekanatickFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTelekanatickFPS), 3237110168U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_3241985108(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_3394767930(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

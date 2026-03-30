@@ -7,8 +7,8 @@
         "Includes": [
             "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\projectrd\\definitions.projectrd.h",
             "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\public\\telekanatickfps.h",
-            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\public\\amo.h",
-            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\unrealeditor\\inc\\projectrd\\uht\\amo.generated.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\public\\fpssystem.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\unrealeditor\\inc\\projectrd\\uht\\fpssystem.generated.h",
             "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\unrealeditor\\inc\\projectrd\\uht\\telekanatickfps.generated.h",
             "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\public\\bulletrd.h",
             "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\unrealeditor\\inc\\projectrd\\uht\\bulletrd.generated.h",
@@ -17,7 +17,9 @@
             "c:\\program files\\ue\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
             "c:\\program files\\ue\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h",
             "c:\\program files\\ue\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\drawspherecomponent.h",
-            "c:\\program files\\ue\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\drawspherecomponent.generated.h"
+            "c:\\program files\\ue\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\drawspherecomponent.generated.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\source\\projectrd\\public\\amo.h",
+            "c:\\users\\alexa\\desktop\\unreal projects\\projectrd\\projectrd\\intermediate\\build\\win64\\unrealeditor\\inc\\projectrd\\uht\\amo.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -4,12 +4,22 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "Amo.h"
+#include "FPSSystem.h"
 #include "TelekanatickFPS.generated.h"
 
+//DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FAmoChange,
+//	int32, CurrentAmo);
+//
+//DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FSetUpAmo,
+//	int32, CurrentAmo,
+//	int32, minAmo,
+//	int32, maxAmo);
+
+class IAmo;
+class USphereComponent;
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class PROJECTRD_API UTelekanatickFPS : public UActorComponent
+class PROJECTRD_API UTelekanatickFPS : public UActorComponent, public IFPSSystem
 {
 	GENERATED_BODY()
 
@@ -19,8 +29,12 @@ public:
 	// Sets default values for this component's properties
 	UTelekanatickFPS();
 #pragma endregion
+	// Inherited via IFPSSystem
+	virtual void Shoot_Implementation() override;
 
-	UFUNCTION(BlueprintCallable) void Shoot(USceneComponent* spawnLoaction);
+	virtual void Reload_Implementation() override;
+
+	virtual void SetBulletSpawnPorstion_Implementation(USceneComponent* SceneComponent) override;
 
 	UFUNCTION(BlueprintCallable) void TelekanetickReload();
 
@@ -34,7 +48,7 @@ protected:
 	virtual void BeginPlay() override;
 #pragma endregion
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "_RD|Amo") TSubclassOf<class ABulletRD> bullet;
+	//UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "_RD|Amo") TSubclassOf<class ABulletRD> bullet;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "_RD|Amo") int hitDamage = 10;
 
@@ -44,7 +58,7 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "_RD|FPS") USceneComponent* shotSpawnPorstion; // basicly a transform
 
-	UPROPERTY(EditAnywhere, Category = "_RD|FPS") class USphereComponent* reloadRadiose;
+	UPROPERTY(EditAnywhere, Category = "_RD|FPS") USphereComponent* reloadRadiose;
 
 
 	UPROPERTY(EditAnywhere, Category = "_RD|Cooldowns") float timeBetinveShots = 0.75f;

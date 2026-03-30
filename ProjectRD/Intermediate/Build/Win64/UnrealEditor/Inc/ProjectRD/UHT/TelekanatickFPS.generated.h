@@ -16,19 +16,16 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
-class USceneComponent;
-
 // ********** Begin Class UTelekanatickFPS *********************************************************
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execResetCanShot); \
 	DECLARE_FUNCTION(execChangeAmo); \
-	DECLARE_FUNCTION(execTelekanetickReload); \
-	DECLARE_FUNCTION(execShoot);
+	DECLARE_FUNCTION(execTelekanetickReload);
 
 
 PROJECTRD_API UClass* Z_Construct_UClass_UTelekanatickFPS_NoRegister();
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_24_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTelekanatickFPS(); \
 	friend struct Z_Construct_UClass_UTelekanatickFPS_Statics; \
@@ -36,10 +33,11 @@ private: \
 	friend PROJECTRD_API UClass* Z_Construct_UClass_UTelekanatickFPS_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UTelekanatickFPS, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/ProjectRD"), Z_Construct_UClass_UTelekanatickFPS_NoRegister) \
-	DECLARE_SERIALIZER(UTelekanatickFPS)
+	DECLARE_SERIALIZER(UTelekanatickFPS) \
+	virtual UObject* _getUObject() const override { return const_cast<UTelekanatickFPS*>(this); }
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_24_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UTelekanatickFPS(UTelekanatickFPS&&) = delete; \
 	UTelekanatickFPS(const UTelekanatickFPS&) = delete; \
@@ -49,13 +47,13 @@ public: \
 	NO_API virtual ~UTelekanatickFPS();
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_11_PROLOG
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_14_GENERATED_BODY \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_21_PROLOG
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_14_INCLASS_NO_PURE_DECLS \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_14_ENHANCED_CONSTRUCTORS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_24_INCLASS_NO_PURE_DECLS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_24_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

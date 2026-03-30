@@ -16,7 +16,18 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
+
 // ********** Begin Class ABulletRD ****************************************************************
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execBulletDestroy); \
+	DECLARE_FUNCTION(execHitDestroy); \
+	DECLARE_FUNCTION(execBulletHit); \
+	DECLARE_FUNCTION(execBegainOverlap);
+
+
 PROJECTRD_API UClass* Z_Construct_UClass_ABulletRD_NoRegister();
 
 #define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_INCLASS_NO_PURE_DECLS \
@@ -44,6 +55,7 @@ public: \
 #define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_INCLASS_NO_PURE_DECLS \
 	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_ENHANCED_CONSTRUCTORS \
 private: \
