@@ -11,10 +11,10 @@
 			"PlayerChartureFPS.gen.cpp.obj",
 			"PlayerControllerFPS.gen.cpp.obj",
 			"ProjectRD.init.gen.cpp.obj",
+			"RDCustomUI.gen.cpp.obj",
 			"StateBar.gen.cpp.obj",
 			"TelecanentickChatrureFPS.gen.cpp.obj",
-			"TelekanatickActorFPS.gen.cpp.obj",
-			"TelekanatickFPS.gen.cpp.obj"
+			"TelekanatickActorFPS.gen.cpp.obj"
 		]
 	}
 }

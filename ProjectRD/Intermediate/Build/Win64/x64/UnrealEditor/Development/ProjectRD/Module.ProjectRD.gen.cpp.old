@@ -8,7 +8,7 @@
 #include "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/UnrealEditor/Inc/ProjectRD/UHT/PlayerChartureFPS.gen.cpp"
 #include "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/UnrealEditor/Inc/ProjectRD/UHT/PlayerControllerFPS.gen.cpp"
 #include "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/UnrealEditor/Inc/ProjectRD/UHT/ProjectRD.init.gen.cpp"
+#include "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/UnrealEditor/Inc/ProjectRD/UHT/RDCustomUI.gen.cpp"
 #include "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/UnrealEditor/Inc/ProjectRD/UHT/StateBar.gen.cpp"
 #include "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/UnrealEditor/Inc/ProjectRD/UHT/TelecanentickChatrureFPS.gen.cpp"
 #include "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/UnrealEditor/Inc/ProjectRD/UHT/TelekanatickActorFPS.gen.cpp"
-#include "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/UnrealEditor/Inc/ProjectRD/UHT/TelekanatickFPS.gen.cpp"

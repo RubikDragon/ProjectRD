@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.ProjectRD.gen.cpp.obj": [
+			"AIControllerRD.gen.cpp.obj",
 			"Amo.gen.cpp.obj",
 			"BasicAmo.gen.cpp.obj",
 			"BlueprintTools.gen.cpp.obj",
@@ -14,8 +15,7 @@
 			"RDCustomUI.gen.cpp.obj",
 			"StateBar.gen.cpp.obj",
 			"TelecanentickChatrureFPS.gen.cpp.obj",
-			"TelekanatickActorFPS.gen.cpp.obj",
-			"TelekanatickFPS.gen.cpp.obj"
+			"TelekanatickActorFPS.gen.cpp.obj"
 		]
 	}
 }
