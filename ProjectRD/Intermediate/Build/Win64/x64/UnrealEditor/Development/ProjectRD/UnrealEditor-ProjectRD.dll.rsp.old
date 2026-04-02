@@ -36,10 +36,13 @@
 /FUNCTIONPADMIN:6
 /NOIMPLIB
 /NOEXP
+/NATVIS:"../Plugins/Runtime/StateTree/Intermediate/Build/Win64/x64/UnrealEditor/Development/StateTreeModule/StateTree.natvis"
 /NATVIS:"../Plugins/FX/Niagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/Niagara/Niagara.natvis"
 "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/ProjectRDEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
 "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/Module.ProjectRD.gen.cpp.obj"
 "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/ProjectRD.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/AIControllerRD.cpp.obj"
+"C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/AIStateTreeBlueprint.cpp.obj"
 "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/Amo.cpp.obj"
 "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/BasicAmo.cpp.obj"
 "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/BlueprintTools.cpp.obj"
@@ -56,6 +59,8 @@
 "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Engine/UnrealEditor-Engine.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/UMG/UnrealEditor-UMG.lib"
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/AIModule/UnrealEditor-AIModule.lib"
+"../Plugins/Runtime/StateTree/Intermediate/Build/Win64/x64/UnrealEditor/Development/StateTreeModule/UnrealEditor-StateTreeModule.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Core/UnrealEditor-Core.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/CoreUObject/UnrealEditor-CoreUObject.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/InputCore/UnrealEditor-InputCore.lib"

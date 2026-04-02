@@ -9,6 +9,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeProjectRD_init() {}
 	PROJECTRD_API UFunction* Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature();
 	PROJECTRD_API UFunction* Z_Construct_UDelegateFunction_ProjectRD_OnDeadth__DelegateSignature();
+	PROJECTRD_API UFunction* Z_Construct_UDelegateFunction_ProjectRD_OnDialogEvent__DelegateSignature();
 	PROJECTRD_API UFunction* Z_Construct_UDelegateFunction_ProjectRD_OnHealthChange__DelegateSignature();
 	PROJECTRD_API UFunction* Z_Construct_UDelegateFunction_ProjectRD_OnHealtStartUp__DelegateSignature();
 	PROJECTRD_API UFunction* Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature();
@@ -20,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectRD_init() {}
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ProjectRD_OnDeadth__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_ProjectRD_OnDialogEvent__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ProjectRD_OnHealthChange__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ProjectRD_OnHealtStartUp__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature,
@@ -29,13 +31,13 @@ void EmptyLinkFunctionForGeneratedCodeProjectRD_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x65DCD481,
-				0x626F164C,
+				0xB635B3E5,
+				0x0DD71C16,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_ProjectRD.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_ProjectRD.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_ProjectRD(Z_Construct_UPackage__Script_ProjectRD, TEXT("/Script/ProjectRD"), Z_Registration_Info_UPackage__Script_ProjectRD, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x65DCD481, 0x626F164C));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_ProjectRD(Z_Construct_UPackage__Script_ProjectRD, TEXT("/Script/ProjectRD"), Z_Registration_Info_UPackage__Script_ProjectRD, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xB635B3E5, 0x0DD71C16));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

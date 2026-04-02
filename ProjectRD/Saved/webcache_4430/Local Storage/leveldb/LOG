@@ -1,3 +1,5 @@
-2026/03/30-22:01:07.282 7bf0 Reusing MANIFEST C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
-2026/03/30-22:01:07.283 7bf0 Recovering log #15
-2026/03/30-22:01:07.284 7bf0 Reusing old log C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Saved/webcache_4430\Local Storage\leveldb/000015.log 
+2026/04/02-22:35:13.494 5e58 Reusing MANIFEST C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2026/04/02-22:35:13.495 5e58 Recovering log #42
+2026/04/02-22:35:13.495 5e58 Level-0 table #44: started
+2026/04/02-22:35:13.496 5e58 Level-0 table #44: 68430 bytes OK
+2026/04/02-22:35:13.497 5e58 Delete type=0 #42

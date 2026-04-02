@@ -3,3 +3,17 @@
 
 #include "AIControllerRD.h"
 
+void AAIControllerRD::BeginPlay()
+{
+
+}
+
+void AAIControllerRD::OnPossess(APawn* InPawn)
+{
+
+}
+
+void AAIControllerRD::OnUnPossess()
+{
+
+}

@@ -2,6 +2,8 @@
 	"RemapUnityFiles": 
 	{
 		"Module.ProjectRD.gen.cpp.obj": [
+			"AIControllerRD.gen.cpp.obj",
+			"AIStateTreeBlueprint.gen.cpp.obj",
 			"Amo.gen.cpp.obj",
 			"BasicAmo.gen.cpp.obj",
 			"BlueprintTools.gen.cpp.obj",

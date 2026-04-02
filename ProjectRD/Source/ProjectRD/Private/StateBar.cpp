@@ -36,7 +36,8 @@ void UStateBar::SetStartBarValues(int32 currentValue, int32 minValue, int32 maxV
 	if (maxValue == 0)
 		KINDA_SMALL_NUMBER;
 
-	UE_LOG(LogTemp, Display, TEXT("Set up values [%d:Min/%d:Max] CurrentValue = %d _____________________________________________"), minValue, maxValue, currentValue);
+	// set debug
+	//UE_LOG(LogTemp, Display, TEXT("Set up values [%d:Min/%d:Max] CurrentValue = %d _____________________________________________"), minValue, maxValue, currentValue);
 
 	UStateBar::valueMin = minValue;
 	UStateBar::valueMax = maxValue;
@@ -92,13 +93,8 @@ void UStateBar::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEve
 {
 	Super::PostEditChangeProperty(PropertyChangedEvent);
 
-	const FString PropertyName = ((PropertyChangedEvent.Property != nullptr) ? PropertyChangedEvent.Property->GetFName() : NAME_None).ToString();
-
-	if (PropertyName == TEXT("barPresentige") || PropertyName == TEXT("CurrentValue")) {
-
-		//SetUpValues();
-		UpdateWidget();
-	}
+	SetUpValues();
+	UpdateWidget();
 }
 #endif
 

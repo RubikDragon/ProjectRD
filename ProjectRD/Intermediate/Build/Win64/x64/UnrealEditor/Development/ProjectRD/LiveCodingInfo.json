@@ -1,8 +1,9 @@
 {
 	"RemapUnityFiles": 
 	{
-		"Module.ProjectRD.gen.cpp.obj": [
+		"Module.ProjectRD.cpp.obj": [
 			"AIControllerRD.gen.cpp.obj",
+			"AIStateTreeBlueprint.gen.cpp.obj",
 			"Amo.gen.cpp.obj",
 			"BasicAmo.gen.cpp.obj",
 			"BlueprintTools.gen.cpp.obj",
@@ -15,7 +16,25 @@
 			"RDCustomUI.gen.cpp.obj",
 			"StateBar.gen.cpp.obj",
 			"TelecanentickChatrureFPS.gen.cpp.obj",
-			"TelekanatickActorFPS.gen.cpp.obj"
+			"TelekanatickActorFPS.gen.cpp.obj",
+			"TextDialogUI.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"AIControllerRD.cpp.obj",
+			"AIStateTreeBlueprint.cpp.obj",
+			"Amo.cpp.obj",
+			"BasicAmo.cpp.obj",
+			"BlueprintTools.cpp.obj",
+			"BulletRD.cpp.obj",
+			"FPSSystem.cpp.obj",
+			"HealtSystem.cpp.obj",
+			"PlayerChartureFPS.cpp.obj",
+			"PlayerControllerFPS.cpp.obj",
+			"RDCustomUI.cpp.obj",
+			"StateBar.cpp.obj",
+			"TelecanentickChatrureFPS.cpp.obj",
+			"TelekanatickActorFPS.cpp.obj",
+			"TextDialogUI.cpp.obj",
+			"ProjectRD.cpp.obj"
 		]
 	}
 }

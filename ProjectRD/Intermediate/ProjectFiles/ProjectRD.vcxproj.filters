@@ -45,6 +45,9 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\AIControllerRD.cpp">
       <Filter>Source\ProjectRD\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AIStateTreeBlueprint.cpp">
+      <Filter>Source\ProjectRD\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ProjectRD\Private\Amo.cpp">
       <Filter>Source\ProjectRD\Private</Filter>
     </ClCompile>
@@ -81,10 +84,16 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\TelekanatickActorFPS.cpp">
       <Filter>Source\ProjectRD\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\TextDialogUI.cpp">
+      <Filter>Source\ProjectRD\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\ProjectRD\Public">
       <UniqueIdentifier>{45FCAFC0-6423-39D4-9962-DA4D9627048E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AIControllerRD.h">
+      <Filter>Source\ProjectRD\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AIStateTreeBlueprint.h">
       <Filter>Source\ProjectRD\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ProjectRD\Public\Amo.h">
@@ -121,6 +130,9 @@
       <Filter>Source\ProjectRD\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ProjectRD\Public\TelekanatickActorFPS.h">
+      <Filter>Source\ProjectRD\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\TextDialogUI.h">
       <Filter>Source\ProjectRD\Public</Filter>
     </ClInclude>
   </ItemGroup>
