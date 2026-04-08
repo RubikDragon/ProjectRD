@@ -61,22 +61,3 @@ public:
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
 };
-
-
-struct SpesialSetAttactmment
-{	
-	enum PlayseOmponentOn
-	{
-		RootComponent,
-		Camera,
-		Sucket,
-		SudoObject,
-	};
-
-public:
-	void SetAttement()
-	{
-
-	}
-
-};

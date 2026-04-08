@@ -42,9 +42,6 @@
     <Filter Include="Source\ProjectRD\Private">
       <UniqueIdentifier>{AC7D0AB2-B642-3FD2-8D54-84667D35CA96}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\ProjectRD\Private\AIControllerRD.cpp">
-      <Filter>Source\ProjectRD\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\ProjectRD\Private\AIStateTreeBlueprint.cpp">
       <Filter>Source\ProjectRD\Private</Filter>
     </ClCompile>
@@ -87,12 +84,39 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\TextDialogUI.cpp">
       <Filter>Source\ProjectRD\Private</Filter>
     </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\AiStuff">
+      <UniqueIdentifier>{928881D2-E8B6-3B31-9948-D46B807A6758}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AITaskAttack.cpp">
+      <Filter>Source\ProjectRD\Private\AiStuff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiTaskJump.cpp">
+      <Filter>Source\ProjectRD\Private\AiStuff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AITaskSendDebugMessage.cpp">
+      <Filter>Source\ProjectRD\Private\AiStuff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiTaskWarking.cpp">
+      <Filter>Source\ProjectRD\Private\AiStuff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\TopDownChartureAIController.cpp">
+      <Filter>Source\ProjectRD\Private\AiStuff</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\CustomCharture">
+      <UniqueIdentifier>{B99F4EC6-AF0E-3A51-A238-73EF9479EE33}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\CustomCharture\BasicChartureRD.cpp">
+      <Filter>Source\ProjectRD\Private\CustomCharture</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\GameComponents">
+      <UniqueIdentifier>{3FEB10BE-B520-3B98-A322-1BA27CCAF2A6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\GameComponents\SpawnActorPrefab.cpp">
+      <Filter>Source\ProjectRD\Private\GameComponents</Filter>
+    </ClCompile>
     <Filter Include="Source\ProjectRD\Public">
       <UniqueIdentifier>{45FCAFC0-6423-39D4-9962-DA4D9627048E}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\ProjectRD\Public\AIControllerRD.h">
-      <Filter>Source\ProjectRD\Public</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AIStateTreeBlueprint.h">
       <Filter>Source\ProjectRD\Public</Filter>
     </ClInclude>
@@ -134,6 +158,36 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\ProjectRD\Public\TextDialogUI.h">
       <Filter>Source\ProjectRD\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\AiStuff">
+      <UniqueIdentifier>{AA95836D-16DB-305E-A579-1A164B7A9F06}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AITaskAttack.h">
+      <Filter>Source\ProjectRD\Public\AiStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskJump.h">
+      <Filter>Source\ProjectRD\Public\AiStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AITaskSendDebugMessage.h">
+      <Filter>Source\ProjectRD\Public\AiStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskWarking.h">
+      <Filter>Source\ProjectRD\Public\AiStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\TopDownChartureAIController.h">
+      <Filter>Source\ProjectRD\Public\AiStuff</Filter>
+    </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\CustomCharture">
+      <UniqueIdentifier>{F018F8A0-DCEA-3047-A1FA-76148AF21065}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\CustomCharture\BasicChartureRD.h">
+      <Filter>Source\ProjectRD\Public\CustomCharture</Filter>
+    </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\GameComponents">
+      <UniqueIdentifier>{AA3D1DD6-ACEF-3E94-A482-2DA2A0CF66C3}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\GameComponents\SpawnActorPrefab.h">
+      <Filter>Source\ProjectRD\Public\GameComponents</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

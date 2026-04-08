@@ -1,11 +1,15 @@
 {
 	"RemapUnityFiles": 
 	{
-		"Module.ProjectRD.gen.cpp.obj": [
-			"AIControllerRD.gen.cpp.obj",
+		"Module.ProjectRD.cpp.obj": [
 			"AIStateTreeBlueprint.gen.cpp.obj",
+			"AITaskAttack.gen.cpp.obj",
+			"AiTaskJump.gen.cpp.obj",
+			"AITaskSendDebugMessage.gen.cpp.obj",
+			"AITaskWarking.gen.cpp.obj",
 			"Amo.gen.cpp.obj",
 			"BasicAmo.gen.cpp.obj",
+			"BasicChartureRD.gen.cpp.obj",
 			"BlueprintTools.gen.cpp.obj",
 			"BulletRD.gen.cpp.obj",
 			"FPSSystem.gen.cpp.obj",
@@ -16,7 +20,31 @@
 			"RDCustomUI.gen.cpp.obj",
 			"StateBar.gen.cpp.obj",
 			"TelecanentickChatrureFPS.gen.cpp.obj",
-			"TelekanatickActorFPS.gen.cpp.obj"
+			"TelekanatickActorFPS.gen.cpp.obj",
+			"TextDialogUI.gen.cpp.obj",
+			"TopDownChartureAIController.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"AIStateTreeBlueprint.cpp.obj",
+			"AITaskAttack.cpp.obj",
+			"AiTaskJump.cpp.obj",
+			"AITaskSendDebugMessage.cpp.obj",
+			"AiTaskWarking.cpp.obj",
+			"TopDownChartureAIController.cpp.obj",
+			"Amo.cpp.obj",
+			"BasicAmo.cpp.obj",
+			"BlueprintTools.cpp.obj",
+			"BulletRD.cpp.obj",
+			"BasicChartureRD.cpp.obj",
+			"FPSSystem.cpp.obj",
+			"HealtSystem.cpp.obj",
+			"PlayerChartureFPS.cpp.obj",
+			"PlayerControllerFPS.cpp.obj",
+			"RDCustomUI.cpp.obj",
+			"StateBar.cpp.obj",
+			"TelecanentickChatrureFPS.cpp.obj",
+			"TelekanatickActorFPS.cpp.obj",
+			"TextDialogUI.cpp.obj",
+			"ProjectRD.cpp.obj"
 		]
 	}
 }

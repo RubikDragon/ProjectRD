@@ -3,3 +3,12 @@
 
 #include "AIStateTreeBlueprint.h"
 
+void UAIStateTreeBlueprint::TreeStart(FStateTreeExecutionContext& Context)
+{
+
+}
+
+void UAIStateTreeBlueprint::TreeStop(FStateTreeExecutionContext& Context)
+{
+
+}

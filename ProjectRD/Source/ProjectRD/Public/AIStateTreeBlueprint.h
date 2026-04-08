@@ -14,6 +14,22 @@ class PROJECTRD_API UAIStateTreeBlueprint : public UStateTreeEvaluatorBlueprintB
 {
 	GENERATED_BODY()
 
-	//UPROPERTY()
-	
+public:
+
+	virtual void TreeStart(FStateTreeExecutionContext& Context) override;
+
+	virtual void TreeStop(FStateTreeExecutionContext& Context) override;
+
+#if WITH_EDITOR
+
+	virtual FText GetDescription(
+		const FGuid& ID,
+		FStateTreeDataView InstanceDataView,
+		const IStateTreeBindingLookup& BindingLookup,
+		EStateTreeNodeFormatting Formatting = EStateTreeNodeFormatting::Text) const {
+		return NSLOCTEXT("PGAS_STE_perception", "Perception", "Monitors the Context Actor's AI perceptions");
+	};
+#endif
+
+
 };

@@ -479,6 +479,10 @@ struct Z_Construct_UClass_UTextDialogUI_Statics
 		{ "Category", "_RD|Style" },
 		{ "ModuleRelativePath", "Public/TextDialogUI.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_showDebug_MetaData[] = {
+		{ "Category", "_RD|Debug" },
+		{ "ModuleRelativePath", "Public/TextDialogUI.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_runningDialog_MetaData[] = {
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// Running info\n" },
@@ -521,6 +525,8 @@ struct Z_Construct_UClass_UTextDialogUI_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_oneLetterAtATime;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_borderColor;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_textColor;
+	static void NewProp_showDebug_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_showDebug;
 	static void NewProp_runningDialog_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_runningDialog;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_currentDilogIndex;
@@ -561,6 +567,11 @@ void Z_Construct_UClass_UTextDialogUI_Statics::NewProp_oneLetterAtATime_SetBit(v
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UTextDialogUI_Statics::NewProp_oneLetterAtATime = { "oneLetterAtATime", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UTextDialogUI), &Z_Construct_UClass_UTextDialogUI_Statics::NewProp_oneLetterAtATime_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_oneLetterAtATime_MetaData), NewProp_oneLetterAtATime_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTextDialogUI_Statics::NewProp_borderColor = { "borderColor", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTextDialogUI, borderColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_borderColor_MetaData), NewProp_borderColor_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UTextDialogUI_Statics::NewProp_textColor = { "textColor", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTextDialogUI, textColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_textColor_MetaData), NewProp_textColor_MetaData) };
+void Z_Construct_UClass_UTextDialogUI_Statics::NewProp_showDebug_SetBit(void* Obj)
+{
+	((UTextDialogUI*)Obj)->showDebug = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UTextDialogUI_Statics::NewProp_showDebug = { "showDebug", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UTextDialogUI), &Z_Construct_UClass_UTextDialogUI_Statics::NewProp_showDebug_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_showDebug_MetaData), NewProp_showDebug_MetaData) };
 void Z_Construct_UClass_UTextDialogUI_Statics::NewProp_runningDialog_SetBit(void* Obj)
 {
 	((UTextDialogUI*)Obj)->runningDialog = 1;
@@ -583,6 +594,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTextDial
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTextDialogUI_Statics::NewProp_oneLetterAtATime,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTextDialogUI_Statics::NewProp_borderColor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTextDialogUI_Statics::NewProp_textColor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTextDialogUI_Statics::NewProp_showDebug,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTextDialogUI_Statics::NewProp_runningDialog,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTextDialogUI_Statics::NewProp_currentDilogIndex,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTextDialogUI_Statics::NewProp_currentStringLine,
@@ -630,10 +642,10 @@ struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_P
 		{ RunDialog_StaticEnum, TEXT("RunDialog"), &Z_Registration_Info_UEnum_RunDialog, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4084631764U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTextDialogUI, UTextDialogUI::StaticClass, TEXT("UTextDialogUI"), &Z_Registration_Info_UClass_UTextDialogUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTextDialogUI), 913838531U) },
+		{ Z_Construct_UClass_UTextDialogUI, UTextDialogUI::StaticClass, TEXT("UTextDialogUI"), &Z_Registration_Info_UClass_UTextDialogUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTextDialogUI), 917048362U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TextDialogUI_h__Script_ProjectRD_2207626791(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TextDialogUI_h__Script_ProjectRD_1690421293(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TextDialogUI_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TextDialogUI_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TextDialogUI_h__Script_ProjectRD_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TextDialogUI_h__Script_ProjectRD_Statics::EnumInfo));
