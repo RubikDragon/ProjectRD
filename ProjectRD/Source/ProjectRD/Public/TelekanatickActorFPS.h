@@ -7,13 +7,13 @@
 #include "FPSSystem.h"
 #include "TelekanatickActorFPS.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FAmoChange,
-	int32, CurrentAmo);
-
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FSetUpAmo,
-	int32, CurrentAmo,
-	int32, minAmo,
-	int32, maxAmo);
+//DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FAmoChange,
+//	int32, CurrentAmo);
+//
+//DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FSetUpAmo,
+//	int32, CurrentAmo,
+//	int32, minAmo,
+//	int32, maxAmo);
 
 class IAmo;
 class USphereComponent;
@@ -43,9 +43,9 @@ public:
 	UFUNCTION(BlueprintCallable) void ResetCanShot();
 
 #pragma region Event
-	UPROPERTY(BlueprintAssignable, Category = "Event|Custom") FAmoChange OnAmoChange;
+	//UPROPERTY(BlueprintAssignable, Category = "Event|Custom") FAmoChange OnAmoChange;
 
-	UPROPERTY(BlueprintAssignable, Category = "Event|Custom") FSetUpAmo OnAmoSetUp;
+	//UPROPERTY(BlueprintAssignable, Category = "Event|Custom") FSetUpAmo OnAmoSetUp;
 #pragma endregion
 
 protected:

@@ -39,6 +39,13 @@ protected:
 
 	UPROPERTY() ABasicChartureRD* possesedPawn;
 
+	// Turtural 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Turtural") TObjectPtr<UBehaviorTree> behaviorTreeTurtural;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Turtural") TObjectPtr<UBehaviorTreeComponent> behaviorTreeComponentTurtural;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Turtural") TObjectPtr<UBlackboardComponent> blackbordComponent;
+
 	// UPROPERTY(BlueprintCallable, Category = "RD|gf") UPGAS_StateTreeAIComponent*
 	
 };

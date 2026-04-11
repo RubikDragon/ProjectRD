@@ -23,110 +23,8 @@ PROJECTRD_API UClass* Z_Construct_UClass_ABulletRD_NoRegister();
 PROJECTRD_API UClass* Z_Construct_UClass_ATelekanatickActorFPS();
 PROJECTRD_API UClass* Z_Construct_UClass_ATelekanatickActorFPS_NoRegister();
 PROJECTRD_API UClass* Z_Construct_UClass_UFPSSystem_NoRegister();
-PROJECTRD_API UFunction* Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature();
-PROJECTRD_API UFunction* Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature();
 UPackage* Z_Construct_UPackage__Script_ProjectRD();
 // ********** End Cross Module References **********************************************************
-
-// ********** Begin Delegate FAmoChange ************************************************************
-struct Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics
-{
-	struct _Script_ProjectRD_eventAmoChange_Parms
-	{
-		int32 CurrentAmo;
-	};
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/TelekanatickActorFPS.h" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FIntPropertyParams NewProp_CurrentAmo;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
-};
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::NewProp_CurrentAmo = { "CurrentAmo", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_ProjectRD_eventAmoChange_Parms, CurrentAmo), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::NewProp_CurrentAmo,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_ProjectRD, nullptr, "AmoChange__DelegateSignature", Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::_Script_ProjectRD_eventAmoChange_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::Function_MetaDataParams)},  };
-static_assert(sizeof(Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::_Script_ProjectRD_eventAmoChange_Parms) < MAX_uint16);
-UFunction* Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-void FAmoChange_DelegateWrapper(const FMulticastScriptDelegate& AmoChange, int32 CurrentAmo)
-{
-	struct _Script_ProjectRD_eventAmoChange_Parms
-	{
-		int32 CurrentAmo;
-	};
-	_Script_ProjectRD_eventAmoChange_Parms Parms;
-	Parms.CurrentAmo=CurrentAmo;
-	AmoChange.ProcessMulticastDelegate<UObject>(&Parms);
-}
-// ********** End Delegate FAmoChange **************************************************************
-
-// ********** Begin Delegate FSetUpAmo *************************************************************
-struct Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics
-{
-	struct _Script_ProjectRD_eventSetUpAmo_Parms
-	{
-		int32 CurrentAmo;
-		int32 minAmo;
-		int32 maxAmo;
-	};
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/TelekanatickActorFPS.h" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FIntPropertyParams NewProp_CurrentAmo;
-	static const UECodeGen_Private::FIntPropertyParams NewProp_minAmo;
-	static const UECodeGen_Private::FIntPropertyParams NewProp_maxAmo;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
-};
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::NewProp_CurrentAmo = { "CurrentAmo", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_ProjectRD_eventSetUpAmo_Parms, CurrentAmo), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::NewProp_minAmo = { "minAmo", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_ProjectRD_eventSetUpAmo_Parms, minAmo), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::NewProp_maxAmo = { "maxAmo", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_ProjectRD_eventSetUpAmo_Parms, maxAmo), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::NewProp_CurrentAmo,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::NewProp_minAmo,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::NewProp_maxAmo,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_ProjectRD, nullptr, "SetUpAmo__DelegateSignature", Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::_Script_ProjectRD_eventSetUpAmo_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::Function_MetaDataParams)},  };
-static_assert(sizeof(Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::_Script_ProjectRD_eventSetUpAmo_Parms) < MAX_uint16);
-UFunction* Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-void FSetUpAmo_DelegateWrapper(const FMulticastScriptDelegate& SetUpAmo, int32 CurrentAmo, int32 minAmo, int32 maxAmo)
-{
-	struct _Script_ProjectRD_eventSetUpAmo_Parms
-	{
-		int32 CurrentAmo;
-		int32 minAmo;
-		int32 maxAmo;
-	};
-	_Script_ProjectRD_eventSetUpAmo_Parms Parms;
-	Parms.CurrentAmo=CurrentAmo;
-	Parms.minAmo=minAmo;
-	Parms.maxAmo=maxAmo;
-	SetUpAmo.ProcessMulticastDelegate<UObject>(&Parms);
-}
-// ********** End Delegate FSetUpAmo ***************************************************************
 
 // ********** Begin Class ATelekanatickActorFPS Function ChangeAmo *********************************
 struct Z_Construct_UFunction_ATelekanatickActorFPS_ChangeAmo_Statics
@@ -291,14 +189,6 @@ struct Z_Construct_UClass_ATelekanatickActorFPS_Statics
 		{ "IncludePath", "TelekanatickActorFPS.h" },
 		{ "ModuleRelativePath", "Public/TelekanatickActorFPS.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnAmoChange_MetaData[] = {
-		{ "Category", "Event|Custom" },
-		{ "ModuleRelativePath", "Public/TelekanatickActorFPS.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnAmoSetUp_MetaData[] = {
-		{ "Category", "Event|Custom" },
-		{ "ModuleRelativePath", "Public/TelekanatickActorFPS.h" },
-	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bullet_MetaData[] = {
 		{ "Category", "_RD|States" },
 		{ "ModuleRelativePath", "Public/TelekanatickActorFPS.h" },
@@ -363,8 +253,6 @@ struct Z_Construct_UClass_ATelekanatickActorFPS_Statics
 		{ "ModuleRelativePath", "Public/TelekanatickActorFPS.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnAmoChange;
-	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnAmoSetUp;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_bullet;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_hitDamage;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_shotSpawnPorstion;
@@ -399,8 +287,6 @@ struct Z_Construct_UClass_ATelekanatickActorFPS_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_OnAmoChange = { "OnAmoChange", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATelekanatickActorFPS, OnAmoChange), Z_Construct_UDelegateFunction_ProjectRD_AmoChange__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAmoChange_MetaData), NewProp_OnAmoChange_MetaData) }; // 1423772316
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_OnAmoSetUp = { "OnAmoSetUp", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATelekanatickActorFPS, OnAmoSetUp), Z_Construct_UDelegateFunction_ProjectRD_SetUpAmo__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAmoSetUp_MetaData), NewProp_OnAmoSetUp_MetaData) }; // 1949449037
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_bullet = { "bullet", nullptr, (EPropertyFlags)0x0024080000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATelekanatickActorFPS, bullet), Z_Construct_UClass_UClass, Z_Construct_UClass_ABulletRD_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bullet_MetaData), NewProp_bullet_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_hitDamage = { "hitDamage", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATelekanatickActorFPS, hitDamage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_hitDamage_MetaData), NewProp_hitDamage_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_shotSpawnPorstion = { "shotSpawnPorstion", nullptr, (EPropertyFlags)0x0020080000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATelekanatickActorFPS, shotSpawnPorstion), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_shotSpawnPorstion_MetaData), NewProp_shotSpawnPorstion_MetaData) };
@@ -431,8 +317,6 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATelekanatickA
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_inReloadRadios_Inner = { "inReloadRadios", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_inReloadRadios = { "inReloadRadios", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATelekanatickActorFPS, inReloadRadios), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_inReloadRadios_MetaData), NewProp_inReloadRadios_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATelekanatickActorFPS_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_OnAmoChange,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_OnAmoSetUp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_bullet,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_hitDamage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATelekanatickActorFPS_Statics::NewProp_shotSpawnPorstion,
@@ -491,10 +375,10 @@ ATelekanatickActorFPS::~ATelekanatickActorFPS() {}
 struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickActorFPS_h__Script_ProjectRD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATelekanatickActorFPS, ATelekanatickActorFPS::StaticClass, TEXT("ATelekanatickActorFPS"), &Z_Registration_Info_UClass_ATelekanatickActorFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATelekanatickActorFPS), 1459146759U) },
+		{ Z_Construct_UClass_ATelekanatickActorFPS, ATelekanatickActorFPS::StaticClass, TEXT("ATelekanatickActorFPS"), &Z_Registration_Info_UClass_ATelekanatickActorFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATelekanatickActorFPS), 2702050788U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickActorFPS_h__Script_ProjectRD_2887714067(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickActorFPS_h__Script_ProjectRD_295481296(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickActorFPS_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickActorFPS_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

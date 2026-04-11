@@ -20,7 +20,7 @@ void ATelekanatickActorFPS::BeginPlay()
 
 	currentAmo = maxAmo;
 
-	OnAmoSetUp.Broadcast(currentAmo, minAmo, maxAmo);
+	//OnAmoSetUp.Broadcast(currentAmo, minAmo, maxAmo);
 }
 
 void ATelekanatickActorFPS::Shoot_Implementation()
@@ -92,7 +92,7 @@ void ATelekanatickActorFPS::ChangeAmo(int amoChange)
 	if (currentAmo < minAmo)
 		currentAmo = minAmo;
 
-	OnAmoChange.Broadcast(currentAmo);
+	//OnAmoChange.Broadcast(currentAmo);
 }
 
 void ATelekanatickActorFPS::ResetCanShot()

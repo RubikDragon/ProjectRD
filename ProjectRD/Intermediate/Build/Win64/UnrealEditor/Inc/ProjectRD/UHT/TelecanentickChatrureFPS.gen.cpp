@@ -16,7 +16,7 @@ ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 PROJECTRD_API UClass* Z_Construct_UClass_APlayerChartureFPS();
 PROJECTRD_API UClass* Z_Construct_UClass_ATelecanentickChatrureFPS();
 PROJECTRD_API UClass* Z_Construct_UClass_ATelecanentickChatrureFPS_NoRegister();
-PROJECTRD_API UClass* Z_Construct_UClass_ATelekanatickActorFPS_NoRegister();
+PROJECTRD_API UClass* Z_Construct_UClass_UTelekanatickFPS_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ProjectRD();
 // ********** End Cross Module References **********************************************************
 
@@ -66,6 +66,7 @@ struct Z_Construct_UClass_ATelecanentickChatrureFPS_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShootingComponent_MetaData[] = {
 		{ "Category", "RD|Components" },
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/TelecanentickChatrureFPS.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReloadRadios_MetaData[] = {
@@ -83,7 +84,7 @@ struct Z_Construct_UClass_ATelecanentickChatrureFPS_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATelecanentickChatrureFPS_Statics::NewProp_ShootingComponent = { "ShootingComponent", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATelecanentickChatrureFPS, ShootingComponent), Z_Construct_UClass_ATelekanatickActorFPS_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShootingComponent_MetaData), NewProp_ShootingComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATelecanentickChatrureFPS_Statics::NewProp_ShootingComponent = { "ShootingComponent", nullptr, (EPropertyFlags)0x002008000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATelecanentickChatrureFPS, ShootingComponent), Z_Construct_UClass_UTelekanatickFPS_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShootingComponent_MetaData), NewProp_ShootingComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATelecanentickChatrureFPS_Statics::NewProp_ReloadRadios = { "ReloadRadios", nullptr, (EPropertyFlags)0x002008000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATelecanentickChatrureFPS, ReloadRadios), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReloadRadios_MetaData), NewProp_ReloadRadios_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATelecanentickChatrureFPS_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATelecanentickChatrureFPS_Statics::NewProp_ShootingComponent,
@@ -126,10 +127,10 @@ ATelecanentickChatrureFPS::~ATelecanentickChatrureFPS() {}
 struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelecanentickChatrureFPS_h__Script_ProjectRD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATelecanentickChatrureFPS, ATelecanentickChatrureFPS::StaticClass, TEXT("ATelecanentickChatrureFPS"), &Z_Registration_Info_UClass_ATelecanentickChatrureFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATelecanentickChatrureFPS), 2487190281U) },
+		{ Z_Construct_UClass_ATelecanentickChatrureFPS, ATelecanentickChatrureFPS::StaticClass, TEXT("ATelecanentickChatrureFPS"), &Z_Registration_Info_UClass_ATelecanentickChatrureFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATelecanentickChatrureFPS), 1933467914U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelecanentickChatrureFPS_h__Script_ProjectRD_1953809290(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelecanentickChatrureFPS_h__Script_ProjectRD_1853018313(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelecanentickChatrureFPS_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelecanentickChatrureFPS_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

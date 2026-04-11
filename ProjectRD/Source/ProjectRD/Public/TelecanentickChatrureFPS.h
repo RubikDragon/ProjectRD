@@ -7,7 +7,7 @@
 #include "TelecanentickChatrureFPS.generated.h"
 
 
-class ATelekanatickActorFPS;
+class UTelekanatickFPS;
 class USphereComponent;
 
 /**
@@ -24,7 +24,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Components") ATelekanatickActorFPS* ShootingComponent;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Components") UTelekanatickFPS* ShootingComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Components") USphereComponent* ReloadRadios;
 };

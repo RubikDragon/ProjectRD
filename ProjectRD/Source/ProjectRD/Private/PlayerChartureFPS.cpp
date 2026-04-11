@@ -5,6 +5,9 @@
 #include "Camera/CameraComponent.h"
 #include "FPSSystem.h"
 
+#include "BlueprintCompilerExtension.h"
+#include "KismetCompiler.h"
+
 // Sets default values
 APlayerChartureFPS::APlayerChartureFPS()
 {
@@ -20,8 +23,10 @@ APlayerChartureFPS::APlayerChartureFPS()
 	camera->SetupAttachment(RootComponent);
 	camera->bUsePawnControlRotation = true;
 
-	// FPS system
-	ShootingActor = CreateDefaultSubobject<UChildActorComponent>(TEXT("SystemFPS"));
+	//  trying to make dynamic CreateDefaultSubobject https://forums.unrealengine.com/t/tsubclassof-variable-used-in-createdefaultsubobject/784583/4
+	// https://forums.unrealengine.com/t/get-type-of-tsubclassof-object/1241027/2
+
+
 }
 
 // Called when the game starts or when spawned
@@ -29,10 +34,20 @@ void APlayerChartureFPS::BeginPlay()
 {
 	Super::BeginPlay();
 
-	FPSSystemActor = ShootingActor->GetChildActor();
+	for (UActorComponent* actComponent : GetComponents())
+	{
+		if (actComponent->Implements<UFPSSystem>()) {
 
-	if (FPSSystemActor && FPSSystemActor->Implements<UFPSSystem>()) {
-		IFPSSystem::Execute_SetBulletSpawnPorstion(FPSSystemActor, shotSpawnPorstion);
+			fpsActorComponent = actComponent;
+		}
+	}
+
+	if (fpsActorComponent && fpsActorComponent->Implements<UFPSSystem>()) {
+		IFPSSystem::Execute_SetBulletSpawnPorstion(fpsActorComponent, shotSpawnPorstion);
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("%s is missing a ActorComponent with IFPSSystem interface, please add one"), *GetName());
 	}
 }
 
@@ -72,17 +87,17 @@ void APlayerChartureFPS::PlayerJump()
 
 void APlayerChartureFPS::PlayerShoot()
 {
-	if (!FPSSystemActor || !FPSSystemActor->Implements<UFPSSystem>())
+	if (!fpsActorComponent || !fpsActorComponent->Implements<UFPSSystem>())
 		return;
 
-	IFPSSystem::Execute_Shoot(FPSSystemActor);
+	IFPSSystem::Execute_Shoot(fpsActorComponent);
 }
 
 void APlayerChartureFPS::PlayerReload()
 {
-	if (!FPSSystemActor || !FPSSystemActor->Implements<UFPSSystem>())
+	if (!fpsActorComponent || !fpsActorComponent->Implements<UFPSSystem>())
 		return;
 
-	IFPSSystem::Execute_Reload(FPSSystemActor);
+	IFPSSystem::Execute_Reload(fpsActorComponent);
 }
 

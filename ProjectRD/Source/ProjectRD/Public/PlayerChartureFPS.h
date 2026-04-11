@@ -37,14 +37,14 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	// FPSSystemActor
+
 #pragma region Created Components
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Components") UChildActorComponent* ShootingActor;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Components") TObjectPtr<UActorComponent> fpsActorComponent;
 
-	UPROPERTY() AActor* FPSSystemActor; 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RD|Components") TObjectPtr<USceneComponent> shotSpawnPorstion; // basicly a transform
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RD|Components") USceneComponent* shotSpawnPorstion; // basicly a transform
-
-	UPROPERTY(EditAnywhere, Category = "RD|Components") UCameraComponent* camera;
+	UPROPERTY(EditAnywhere, Category = "RD|Components") TObjectPtr<UCameraComponent> camera;
 #pragma endregion
 
 #pragma region States

@@ -7,7 +7,8 @@
 
 ATopDownChartureAIController::ATopDownChartureAIController()
 {
-
+	//BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>(TEXT("Behavior tree component"));
+	//BlackbordComponent = CreateDefaultSubobject<UBlackboardComponent>(TEXT("Blackbord component"));	
 }
 
 void ATopDownChartureAIController::BeginPlay()

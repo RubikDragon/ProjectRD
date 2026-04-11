@@ -28,5 +28,8 @@ void ASpawnActorPrefab::SpawnActor()
 
 void ASpawnActorPrefab::SpawnPrefabActor(TSubclassOf<AActor> prefab)
 {
+	if (!prefab || !spawnPostion)
+		return;
+
 	GetWorld()->SpawnActor<AActor>(prefab, spawnPostion->GetRelativeLocation(), spawnPostion->GetRelativeRotation() );
 }

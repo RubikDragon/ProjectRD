@@ -20,6 +20,6 @@ public:
 protected:
 	UAITaskSendDebugMessage();
 
-	UPROPERTY(EditAnywhere, Category = "RD|Print") FString debugText = "Ai pintede this text";
+	UPROPERTY(EditAnywhere, Category = "RD|Print") FString debugText = "AI Text: Hello world";
 
 };

@@ -18,20 +18,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 class USphereComponent;
 
-// ********** Begin Delegate FAmoChange ************************************************************
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickActorFPS_h_11_DELEGATE \
-PROJECTRD_API void FAmoChange_DelegateWrapper(const FMulticastScriptDelegate& AmoChange, int32 CurrentAmo);
-
-
-// ********** End Delegate FAmoChange **************************************************************
-
-// ********** Begin Delegate FSetUpAmo *************************************************************
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickActorFPS_h_16_DELEGATE \
-PROJECTRD_API void FSetUpAmo_DelegateWrapper(const FMulticastScriptDelegate& SetUpAmo, int32 CurrentAmo, int32 minAmo, int32 maxAmo);
-
-
-// ********** End Delegate FSetUpAmo ***************************************************************
-
 // ********** Begin Class ATelekanatickActorFPS ****************************************************
 #define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickActorFPS_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execResetCanShot); \

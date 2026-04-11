@@ -13,10 +13,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerChartureFPS() {}
 
 // ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
-ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+ENGINE_API UClass* Z_Construct_UClass_UActorComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
-ENGINE_API UClass* Z_Construct_UClass_UChildActorComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 PROJECTRD_API UClass* Z_Construct_UClass_APlayerChartureFPS();
 PROJECTRD_API UClass* Z_Construct_UClass_APlayerChartureFPS_NoRegister();
@@ -244,12 +243,9 @@ struct Z_Construct_UClass_APlayerChartureFPS_Statics
 		{ "IncludePath", "PlayerChartureFPS.h" },
 		{ "ModuleRelativePath", "Public/PlayerChartureFPS.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShootingActor_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_fpsActorComponent_MetaData[] = {
 		{ "Category", "RD|Components" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/PlayerChartureFPS.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FPSSystemActor_MetaData[] = {
 		{ "ModuleRelativePath", "Public/PlayerChartureFPS.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_shotSpawnPorstion_MetaData[] = {
@@ -277,8 +273,7 @@ struct Z_Construct_UClass_APlayerChartureFPS_Statics
 		{ "ModuleRelativePath", "Public/PlayerChartureFPS.h" },
 	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShootingActor;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_FPSSystemActor;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_fpsActorComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_shotSpawnPorstion;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_camera;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_moveSpeed;
@@ -298,15 +293,13 @@ struct Z_Construct_UClass_APlayerChartureFPS_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_ShootingActor = { "ShootingActor", nullptr, (EPropertyFlags)0x002008000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerChartureFPS, ShootingActor), Z_Construct_UClass_UChildActorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShootingActor_MetaData), NewProp_ShootingActor_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_FPSSystemActor = { "FPSSystemActor", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerChartureFPS, FPSSystemActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FPSSystemActor_MetaData), NewProp_FPSSystemActor_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_shotSpawnPorstion = { "shotSpawnPorstion", nullptr, (EPropertyFlags)0x002008000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerChartureFPS, shotSpawnPorstion), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_shotSpawnPorstion_MetaData), NewProp_shotSpawnPorstion_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_camera = { "camera", nullptr, (EPropertyFlags)0x0020080000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerChartureFPS, camera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_camera_MetaData), NewProp_camera_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_fpsActorComponent = { "fpsActorComponent", nullptr, (EPropertyFlags)0x012408000008001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerChartureFPS, fpsActorComponent), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_fpsActorComponent_MetaData), NewProp_fpsActorComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_shotSpawnPorstion = { "shotSpawnPorstion", nullptr, (EPropertyFlags)0x012408000008000d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerChartureFPS, shotSpawnPorstion), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_shotSpawnPorstion_MetaData), NewProp_shotSpawnPorstion_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_camera = { "camera", nullptr, (EPropertyFlags)0x0124080000080009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerChartureFPS, camera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_camera_MetaData), NewProp_camera_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_moveSpeed = { "moveSpeed", nullptr, (EPropertyFlags)0x0020080000010005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerChartureFPS, moveSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_moveSpeed_MetaData), NewProp_moveSpeed_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_jumpPower = { "jumpPower", nullptr, (EPropertyFlags)0x0020080000010005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerChartureFPS, jumpPower), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_jumpPower_MetaData), NewProp_jumpPower_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayerChartureFPS_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_ShootingActor,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_FPSSystemActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_fpsActorComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_shotSpawnPorstion,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_camera,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerChartureFPS_Statics::NewProp_moveSpeed,
@@ -349,10 +342,10 @@ APlayerChartureFPS::~APlayerChartureFPS() {}
 struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_PlayerChartureFPS_h__Script_ProjectRD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerChartureFPS, APlayerChartureFPS::StaticClass, TEXT("APlayerChartureFPS"), &Z_Registration_Info_UClass_APlayerChartureFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerChartureFPS), 2056914844U) },
+		{ Z_Construct_UClass_APlayerChartureFPS, APlayerChartureFPS::StaticClass, TEXT("APlayerChartureFPS"), &Z_Registration_Info_UClass_APlayerChartureFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerChartureFPS), 1244709230U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_PlayerChartureFPS_h__Script_ProjectRD_3273067714(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_PlayerChartureFPS_h__Script_ProjectRD_1555896698(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_PlayerChartureFPS_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_PlayerChartureFPS_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

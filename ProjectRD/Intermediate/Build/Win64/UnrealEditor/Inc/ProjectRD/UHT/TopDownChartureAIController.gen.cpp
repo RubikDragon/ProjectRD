@@ -14,6 +14,8 @@ void EmptyLinkFunctionForGeneratedCodeTopDownChartureAIController() {}
 // ********** Begin Cross Module References ********************************************************
 AIMODULE_API UClass* Z_Construct_UClass_AAIController();
 AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTree_NoRegister();
+AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTreeComponent_NoRegister();
+AIMODULE_API UClass* Z_Construct_UClass_UBlackboardComponent_NoRegister();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 PROJECTRD_API UClass* Z_Construct_UClass_ABasicChartureRD_NoRegister();
 PROJECTRD_API UClass* Z_Construct_UClass_ATopDownChartureAIController();
@@ -182,9 +184,32 @@ struct Z_Construct_UClass_ATopDownChartureAIController_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_possesedPawn_MetaData[] = {
 		{ "ModuleRelativePath", "Public/AiStuff/TopDownChartureAIController.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_behaviorTreeTurtural_MetaData[] = {
+		{ "Category", "RD|Turtural" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Turtural \n" },
+#endif
+		{ "ModuleRelativePath", "Public/AiStuff/TopDownChartureAIController.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Turtural" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_behaviorTreeComponentTurtural_MetaData[] = {
+		{ "Category", "RD|Turtural" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/AiStuff/TopDownChartureAIController.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_blackbordComponent_MetaData[] = {
+		{ "Category", "RD|Turtural" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/AiStuff/TopDownChartureAIController.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_behaviorTree;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_possesedPawn;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_behaviorTreeTurtural;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_behaviorTreeComponentTurtural;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_blackbordComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -200,9 +225,15 @@ struct Z_Construct_UClass_ATopDownChartureAIController_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_behaviorTree = { "behaviorTree", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATopDownChartureAIController, behaviorTree), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_behaviorTree_MetaData), NewProp_behaviorTree_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_possesedPawn = { "possesedPawn", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATopDownChartureAIController, possesedPawn), Z_Construct_UClass_ABasicChartureRD_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_possesedPawn_MetaData), NewProp_possesedPawn_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_behaviorTreeTurtural = { "behaviorTreeTurtural", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATopDownChartureAIController, behaviorTreeTurtural), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_behaviorTreeTurtural_MetaData), NewProp_behaviorTreeTurtural_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_behaviorTreeComponentTurtural = { "behaviorTreeComponentTurtural", nullptr, (EPropertyFlags)0x012408000008001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATopDownChartureAIController, behaviorTreeComponentTurtural), Z_Construct_UClass_UBehaviorTreeComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_behaviorTreeComponentTurtural_MetaData), NewProp_behaviorTreeComponentTurtural_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_blackbordComponent = { "blackbordComponent", nullptr, (EPropertyFlags)0x012408000008001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATopDownChartureAIController, blackbordComponent), Z_Construct_UClass_UBlackboardComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_blackbordComponent_MetaData), NewProp_blackbordComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATopDownChartureAIController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_behaviorTree,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_possesedPawn,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_behaviorTreeTurtural,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_behaviorTreeComponentTurtural,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATopDownChartureAIController_Statics::NewProp_blackbordComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ATopDownChartureAIController_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ATopDownChartureAIController_Statics::DependentSingletons[])() = {
@@ -241,10 +272,10 @@ ATopDownChartureAIController::~ATopDownChartureAIController() {}
 struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h__Script_ProjectRD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATopDownChartureAIController, ATopDownChartureAIController::StaticClass, TEXT("ATopDownChartureAIController"), &Z_Registration_Info_UClass_ATopDownChartureAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATopDownChartureAIController), 514223626U) },
+		{ Z_Construct_UClass_ATopDownChartureAIController, ATopDownChartureAIController::StaticClass, TEXT("ATopDownChartureAIController"), &Z_Registration_Info_UClass_ATopDownChartureAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATopDownChartureAIController), 1255411655U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h__Script_ProjectRD_3149635165(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h__Script_ProjectRD_2648391047(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

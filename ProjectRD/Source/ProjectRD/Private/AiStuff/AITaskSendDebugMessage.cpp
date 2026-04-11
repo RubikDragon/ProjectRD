@@ -12,8 +12,7 @@ EBTNodeResult::Type UAITaskSendDebugMessage::ExecuteTask(UBehaviorTreeComponent&
 {
 
 
-	//UE_LOG(LogTemp, Display, TEXT("AI Text: %s"), debugText);
-	UE_LOG(LogTemp, Display, TEXT("AI Test fire"));
+	UE_LOG(LogTemp, Display, TEXT("%s"), *debugText);
 
 	FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 	return EBTNodeResult::Succeeded;
