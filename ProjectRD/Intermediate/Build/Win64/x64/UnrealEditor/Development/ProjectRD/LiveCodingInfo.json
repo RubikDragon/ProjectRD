@@ -4,6 +4,8 @@
 		"Module.ProjectRD.cpp.obj": [
 			"AIStateTreeBlueprint.gen.cpp.obj",
 			"AITaskAttack.gen.cpp.obj",
+			"AiTaskGetAiLocation.gen.cpp.obj",
+			"AiTaskGetClosePlayerLocation.gen.cpp.obj",
 			"AiTaskJump.gen.cpp.obj",
 			"AiTaskRandomMove.gen.cpp.obj",
 			"AITaskSendDebugMessage.gen.cpp.obj",
@@ -29,6 +31,8 @@
 			"PerModuleInline.gen.cpp.obj",
 			"AIStateTreeBlueprint.cpp.obj",
 			"AITaskAttack.cpp.obj",
+			"AiTaskGetAiLocation.cpp.obj",
+			"AiTaskGetClosePlayerLocation.cpp.obj",
 			"AiTaskJump.cpp.obj",
 			"AiTaskRandomMove.cpp.obj",
 			"AITaskSendDebugMessage.cpp.obj",

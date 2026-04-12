@@ -93,6 +93,12 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AITaskAttack.cpp">
       <Filter>Source\ProjectRD\Private\AiStuff</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiTaskGetAiLocation.cpp">
+      <Filter>Source\ProjectRD\Private\AiStuff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiTaskGetClosePlayerLocation.cpp">
+      <Filter>Source\ProjectRD\Private\AiStuff</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiTaskJump.cpp">
       <Filter>Source\ProjectRD\Private\AiStuff</Filter>
     </ClCompile>
@@ -172,6 +178,12 @@
       <UniqueIdentifier>{AA95836D-16DB-305E-A579-1A164B7A9F06}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AITaskAttack.h">
+      <Filter>Source\ProjectRD\Public\AiStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskGetAiLocation.h">
+      <Filter>Source\ProjectRD\Public\AiStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskGetClosePlayerLocation.h">
       <Filter>Source\ProjectRD\Public\AiStuff</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskJump.h">

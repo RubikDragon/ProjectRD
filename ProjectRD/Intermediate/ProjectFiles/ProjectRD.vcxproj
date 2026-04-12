@@ -310,6 +310,12 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AITaskAttack.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiTaskGetAiLocation.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiTaskGetClosePlayerLocation.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiTaskJump.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -347,6 +353,8 @@
     <ClInclude Include="..\..\Source\ProjectRD\Public\TelekanatickFPS.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\TextDialogUI.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AITaskAttack.h"/>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskGetAiLocation.h"/>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskGetClosePlayerLocation.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskJump.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskRandomMove.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AITaskSendDebugMessage.h"/>

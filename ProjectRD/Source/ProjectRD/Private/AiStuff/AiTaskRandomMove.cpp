@@ -11,7 +11,7 @@
 
 UAiTaskRandomMove::UAiTaskRandomMove()
 {
-	NodeName = TEXT("Go to random location");
+	NodeName = TEXT("Get random location");
 	
 	// markes so blackbordKey can only be assepted as a Vector value
 	BlackboardKey.AddVectorFilter(this, GET_MEMBER_NAME_CHECKED(UAiTaskRandomMove, BlackboardKey));
@@ -44,6 +44,8 @@ EBTNodeResult::Type UAiTaskRandomMove::ExecuteTask(UBehaviorTreeComponent& Owner
 			return EBTNodeResult::Succeeded;
 		}
 	}
+
+	
 
 	FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
 	return EBTNodeResult::Failed;
