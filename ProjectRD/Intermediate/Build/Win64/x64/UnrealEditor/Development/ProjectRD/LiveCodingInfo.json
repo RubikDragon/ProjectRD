@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.ProjectRD.cpp.obj": [
+			"AiDecorePlayerWithInRange.gen.cpp.obj",
 			"AIStateTreeBlueprint.gen.cpp.obj",
 			"AITaskAttack.gen.cpp.obj",
 			"AiTaskGetAiLocation.gen.cpp.obj",
@@ -30,6 +31,7 @@
 			"TopDownChartureAIController.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"AIStateTreeBlueprint.cpp.obj",
+			"AiDecorePlayerWithInRange.cpp.obj",
 			"AITaskAttack.cpp.obj",
 			"AiTaskGetAiLocation.cpp.obj",
 			"AiTaskGetClosePlayerLocation.cpp.obj",

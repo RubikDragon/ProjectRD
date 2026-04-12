@@ -3,6 +3,8 @@
 
 #include "AiStuff/AITaskAttack.h"
 #include "AiStuff/TopDownChartureAIController.h"
+#include "PlayerChartureFPS.h"
+#include "AIController.h"
 
 UAITaskAttack::UAITaskAttack()
 {
@@ -11,17 +13,34 @@ UAITaskAttack::UAITaskAttack()
 
 EBTNodeResult::Type UAITaskAttack::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
+		
+	aiController = OwnerComp.GetAIOwner();
 
-	if (ATopDownChartureAIController* owningController = Cast<ATopDownChartureAIController>(OwnerComp.GetAIOwner())) {
+	if (!aiController) {
 
-		owningController->AiAttackAction();
-
-		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
-		return EBTNodeResult::Succeeded;
-	}
-	else
-	{
 		FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
 		return EBTNodeResult::Failed;
 	}
+
+	aiPawn = aiController->GetPawn();
+
+	if (!aiPawn) {
+
+		FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
+		return EBTNodeResult::Failed;
+	}
+
+	aiCharture = Cast<APlayerChartureFPS>(aiPawn);
+
+	if (!aiCharture)
+	{
+		FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
+		return EBTNodeResult::Failed;
+
+	}
+
+	aiCharture->PlayerShoot();
+
+	FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
+	return EBTNodeResult::Succeeded;
 }

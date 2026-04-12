@@ -5,6 +5,7 @@
 #include "AiStuff/TopDownChartureAIController.h"
 #include "Kismet/GameplayStatics.h"
 
+
 UAiTaskWarking::UAiTaskWarking()
 {
 
@@ -15,6 +16,8 @@ EBTNodeResult::Type UAiTaskWarking::ExecuteTask(UBehaviorTreeComponent& OwnerCom
 	//owningController = Cast<AAIController>(OwnerComp.GetAIOwner());
 
 	if (ATopDownChartureAIController* owningController = Cast<ATopDownChartureAIController>(OwnerComp.GetAIOwner())) {
+
+
 
 		//owningController->AiMoveAction();
 		FVector g = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();

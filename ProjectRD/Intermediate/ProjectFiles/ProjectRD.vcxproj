@@ -307,6 +307,9 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\TextDialogUI.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiDecorePlayerWithInRange.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AITaskAttack.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -352,6 +355,7 @@
     <ClInclude Include="..\..\Source\ProjectRD\Public\TelekanatickActorFPS.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\TelekanatickFPS.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\TextDialogUI.h"/>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiDecorePlayerWithInRange.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AITaskAttack.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskGetAiLocation.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskGetClosePlayerLocation.h"/>

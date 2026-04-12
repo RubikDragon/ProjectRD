@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UAITaskAttack ************************************************************
 PROJECTRD_API UClass* Z_Construct_UClass_UAITaskAttack_NoRegister();
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAITaskAttack(); \
 	friend struct Z_Construct_UClass_UAITaskAttack_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UAITaskAttack)
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_19_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UAITaskAttack(UAITaskAttack&&) = delete; \
 	UAITaskAttack(const UAITaskAttack&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~UAITaskAttack();
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_12_PROLOG
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_15_GENERATED_BODY \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_16_PROLOG
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_19_INCLASS_NO_PURE_DECLS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AITaskAttack_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

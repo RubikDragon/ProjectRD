@@ -6,6 +6,10 @@
 #include "BehaviorTree/BTTaskNode.h"
 #include "AITaskAttack.generated.h"
 
+class AAIController;
+class APawn;
+class APlayerChartureFPS;
+
 /**
  * 
  */
@@ -19,5 +23,7 @@ protected:
 
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
-	//UPROPERTY() AAIController* owningController;
+	UPROPERTY() AAIController* aiController;
+	UPROPERTY() APawn* aiPawn;
+	UPROPERTY() APlayerChartureFPS* aiCharture;
 };
