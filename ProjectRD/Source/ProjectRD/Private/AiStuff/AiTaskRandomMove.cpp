@@ -13,12 +13,14 @@ UAiTaskRandomMove::UAiTaskRandomMove()
 {
 	NodeName = TEXT("Go to random location");
 	
-	// accept only vectors
-	//BlackboardKey.AddVectorFilter(this, GET_MEMBER_NAME_CHECKED(UHopperBTTask_FindRandomLocation, BlackboardKey));
+	// markes so blackbordKey can only be assepted as a Vector value
+	BlackboardKey.AddVectorFilter(this, GET_MEMBER_NAME_CHECKED(UAiTaskRandomMove, BlackboardKey));
 }
 
 EBTNodeResult::Type UAiTaskRandomMove::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
+
+
 	//return EBTNodeResult::Type();
 
 	FNavLocation navLocation;
@@ -42,7 +44,6 @@ EBTNodeResult::Type UAiTaskRandomMove::ExecuteTask(UBehaviorTreeComponent& Owner
 			return EBTNodeResult::Succeeded;
 		}
 	}
-
 
 	FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
 	return EBTNodeResult::Failed;

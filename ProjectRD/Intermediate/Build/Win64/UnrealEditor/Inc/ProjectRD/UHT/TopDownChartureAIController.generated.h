@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class ATopDownChartureAIController *********************************************
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execAiAttackAction); \
 	DECLARE_FUNCTION(execAiMoveAction); \
 	DECLARE_FUNCTION(execAiJumpAction);
@@ -25,7 +25,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 PROJECTRD_API UClass* Z_Construct_UClass_ATopDownChartureAIController_NoRegister();
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_20_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATopDownChartureAIController(); \
 	friend struct Z_Construct_UClass_ATopDownChartureAIController_Statics; \
@@ -36,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(ATopDownChartureAIController)
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_20_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_23_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ATopDownChartureAIController(ATopDownChartureAIController&&) = delete; \
 	ATopDownChartureAIController(const ATopDownChartureAIController&) = delete; \
@@ -46,13 +46,13 @@ public: \
 	NO_API virtual ~ATopDownChartureAIController();
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_17_PROLOG
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_20_GENERATED_BODY \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_20_PROLOG
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_20_INCLASS_NO_PURE_DECLS \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_20_ENHANCED_CONSTRUCTORS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_TopDownChartureAIController_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

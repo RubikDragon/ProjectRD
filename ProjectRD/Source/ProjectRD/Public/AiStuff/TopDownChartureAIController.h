@@ -6,10 +6,13 @@
 #include "AIController.h"
 #include "TopDownChartureAIController.generated.h"
 
-class ABasicChartureRD;
 
 //DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams();
 //DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam();
+
+class ABasicChartureRD;
+class UBehaviorTreeComponent;
+class UBlackboardComponent;
 
 /**
  * 
@@ -39,12 +42,9 @@ protected:
 
 	UPROPERTY() ABasicChartureRD* possesedPawn;
 
-	// Turtural 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Turtural") TObjectPtr<UBehaviorTree> behaviorTreeTurtural;
-
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Turtural") TObjectPtr<UBehaviorTreeComponent> behaviorTreeComponentTurtural;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Turtural") TObjectPtr<UBlackboardComponent> blackbordComponent;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "RD|Turtural") TObjectPtr<UBlackboardComponent> blackbordComponentTurtural;
 
 	// UPROPERTY(BlueprintCallable, Category = "RD|gf") UPGAS_StateTreeAIComponent*
 	

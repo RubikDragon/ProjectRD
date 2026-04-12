@@ -3,17 +3,27 @@
 
 #include "AiStuff/TopDownChartureAIController.h"
 #include "CustomCharture/BasicChartureRD.h"
+
 #include "BehaviorTree/BehaviorTree.h"
+#include "BehaviorTree/BehaviorTreeComponent.h"
+#include "BehaviorTree/BlackboardComponent.h"
 
 ATopDownChartureAIController::ATopDownChartureAIController()
 {
-	//BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>(TEXT("Behavior tree component"));
-	//BlackbordComponent = CreateDefaultSubobject<UBlackboardComponent>(TEXT("Blackbord component"));	
+	behaviorTreeComponentTurtural = CreateDefaultSubobject<UBehaviorTreeComponent>(TEXT("Behavior tree component"));
+	blackbordComponentTurtural = CreateDefaultSubobject<UBlackboardComponent>(TEXT("Blackbord component"));
 }
 
 void ATopDownChartureAIController::BeginPlay()
 {
+	Super::BeginPlay();
 
+	if (IsValid(behaviorTree.Get())) {
+
+		RunBehaviorTree(behaviorTree.Get());
+		behaviorTreeComponentTurtural->StartTree(*behaviorTree.Get());
+
+	}
 }
 
 void ATopDownChartureAIController::OnPossess(APawn* InPawn)
@@ -24,14 +34,20 @@ void ATopDownChartureAIController::OnPossess(APawn* InPawn)
 	// for som reason the ai does not work if it was set into the world. 
 	// but for now if you set (placed in world or spawned) in pawn. then it works when spawnede. stile not when set but its somthing
 
-	possesedPawn = Cast<ABasicChartureRD>(InPawn); 
+	//possesedPawn = Cast<ABasicChartureRD>(InPawn); 
 
-	if (behaviorTree) {	
-		UBlackboardComponent* defaultBlackbord = nullptr;
+	//if (behaviorTree) {	
+	//	UBlackboardComponent* defaultBlackbord = nullptr;
 
-		UseBlackboard(behaviorTree->BlackboardAsset, defaultBlackbord);
-		RunBehaviorTree(behaviorTree);
+	//	UseBlackboard(behaviorTree->BlackboardAsset, defaultBlackbord);
+	//	RunBehaviorTree(behaviorTree);
+	//}
+	
+	if (IsValid(Blackboard.Get()) && IsValid(behaviorTree.Get())) {
+
+		Blackboard->InitializeBlackboard(*behaviorTree.Get()->BlackboardAsset.Get());
 	}
+
 }
 
 void ATopDownChartureAIController::OnUnPossess()
