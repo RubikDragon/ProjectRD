@@ -12,12 +12,16 @@ void UTelekanatickFPS::BeginPlay()
 	Super::BeginPlay();
 
 	currentAmo = maxAmo;
+	canShot = true;
 
 	OnAmoSetUp.Broadcast(currentAmo, minAmo, maxAmo);
 } 
 
 void UTelekanatickFPS::Shoot_Implementation()
 {
+	if (!canShot)
+		return;
+
 	if (!bullet) {
 		UE_LOG(LogTemp, Error, TEXT("%s on %s is missing A bullet to shot. this must be set for shotting to work"), *GetName(), *GetOwner()->GetName());
 		return;
