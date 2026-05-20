@@ -27,6 +27,7 @@ NIAGARA_API UClass* Z_Construct_UClass_UNiagaraComponent_NoRegister();
 NIAGARA_API UClass* Z_Construct_UClass_UNiagaraSystem_NoRegister();
 PROJECTRD_API UClass* Z_Construct_UClass_ABulletRD();
 PROJECTRD_API UClass* Z_Construct_UClass_ABulletRD_NoRegister();
+PROJECTRD_API UClass* Z_Construct_UClass_UProjectile_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ProjectRD();
 // ********** End Cross Module References **********************************************************
 
@@ -182,6 +183,48 @@ DEFINE_FUNCTION(ABulletRD::execBulletHit)
 }
 // ********** End Class ABulletRD Function BulletHit ***********************************************
 
+// ********** Begin Class ABulletRD Function FireProjetile_Implementation **************************
+struct Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics
+{
+	struct BulletRD_eventFireProjetile_Implementation_Parms
+	{
+		AActor* projectileFirer;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/BulletRD.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_projectileFirer;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::NewProp_projectileFirer = { "projectileFirer", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BulletRD_eventFireProjetile_Implementation_Parms, projectileFirer), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::NewProp_projectileFirer,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ABulletRD, nullptr, "FireProjetile_Implementation", Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::BulletRD_eventFireProjetile_Implementation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::BulletRD_eventFireProjetile_Implementation_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ABulletRD::execFireProjetile_Implementation)
+{
+	P_GET_OBJECT(AActor,Z_Param_projectileFirer);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->FireProjetile_Implementation(Z_Param_projectileFirer);
+	P_NATIVE_END;
+}
+// ********** End Class ABulletRD Function FireProjetile_Implementation ****************************
+
 // ********** Begin Class ABulletRD Function HitDestroy ********************************************
 struct Z_Construct_UFunction_ABulletRD_HitDestroy_Statics
 {
@@ -232,6 +275,7 @@ void ABulletRD::StaticRegisterNativesABulletRD()
 		{ "BegainOverlap", &ABulletRD::execBegainOverlap },
 		{ "BulletDestroy", &ABulletRD::execBulletDestroy },
 		{ "BulletHit", &ABulletRD::execBulletHit },
+		{ "FireProjetile_Implementation", &ABulletRD::execFireProjetile_Implementation },
 		{ "HitDestroy", &ABulletRD::execHitDestroy },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -325,9 +369,11 @@ struct Z_Construct_UClass_ABulletRD_Statics
 		{ &Z_Construct_UFunction_ABulletRD_BegainOverlap, "BegainOverlap" }, // 1115123837
 		{ &Z_Construct_UFunction_ABulletRD_BulletDestroy, "BulletDestroy" }, // 3049882160
 		{ &Z_Construct_UFunction_ABulletRD_BulletHit, "BulletHit" }, // 61658624
+		{ &Z_Construct_UFunction_ABulletRD_FireProjetile_Implementation, "FireProjetile_Implementation" }, // 2794949137
 		{ &Z_Construct_UFunction_ABulletRD_HitDestroy, "HitDestroy" }, // 1401553169
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABulletRD>::IsAbstract,
 	};
@@ -359,6 +405,9 @@ UObject* (*const Z_Construct_UClass_ABulletRD_Statics::DependentSingletons[])() 
 	(UObject* (*)())Z_Construct_UPackage__Script_ProjectRD,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABulletRD_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ABulletRD_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UProjectile_NoRegister, (int32)VTABLE_OFFSET(ABulletRD, IProjectile), false },  // 1354053017
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ABulletRD_Statics::ClassParams = {
 	&ABulletRD::StaticClass,
 	"Engine",
@@ -366,11 +415,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ABulletRD_Statics::Clas
 	DependentSingletons,
 	FuncInfo,
 	Z_Construct_UClass_ABulletRD_Statics::PropPointers,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_ABulletRD_Statics::PropPointers),
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABulletRD_Statics::Class_MetaDataParams), Z_Construct_UClass_ABulletRD_Statics::Class_MetaDataParams)
 };
@@ -390,10 +439,10 @@ ABulletRD::~ABulletRD() {}
 struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h__Script_ProjectRD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABulletRD, ABulletRD::StaticClass, TEXT("ABulletRD"), &Z_Registration_Info_UClass_ABulletRD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABulletRD), 224672029U) },
+		{ Z_Construct_UClass_ABulletRD, ABulletRD::StaticClass, TEXT("ABulletRD"), &Z_Registration_Info_UClass_ABulletRD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABulletRD), 2128250405U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h__Script_ProjectRD_1654377003(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h__Script_ProjectRD_4282877626(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

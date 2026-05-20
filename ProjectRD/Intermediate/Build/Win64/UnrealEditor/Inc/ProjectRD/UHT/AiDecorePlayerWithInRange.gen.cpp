@@ -65,8 +65,14 @@ struct Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics
 		{ "Category", "RD|Search" },
 		{ "ModuleRelativePath", "Public/AiStuff/AiDecorePlayerWithInRange.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_showDebug_MetaData[] = {
+		{ "Category", "RD|Debug" },
+		{ "ModuleRelativePath", "Public/AiStuff/AiDecorePlayerWithInRange.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_distanceRange;
+	static void NewProp_showDebug_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_showDebug;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -75,8 +81,14 @@ struct Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics::NewProp_distanceRange = { "distanceRange", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAiDecorePlayerWithInRange, distanceRange), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_distanceRange_MetaData), NewProp_distanceRange_MetaData) };
+void Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics::NewProp_showDebug_SetBit(void* Obj)
+{
+	((UAiDecorePlayerWithInRange*)Obj)->showDebug = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics::NewProp_showDebug = { "showDebug", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UAiDecorePlayerWithInRange), &Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics::NewProp_showDebug_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_showDebug_MetaData), NewProp_showDebug_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics::NewProp_distanceRange,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics::NewProp_showDebug,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UAiDecorePlayerWithInRange_Statics::DependentSingletons[])() = {
@@ -115,10 +127,10 @@ UAiDecorePlayerWithInRange::~UAiDecorePlayerWithInRange() {}
 struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AiDecorePlayerWithInRange_h__Script_ProjectRD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAiDecorePlayerWithInRange, UAiDecorePlayerWithInRange::StaticClass, TEXT("UAiDecorePlayerWithInRange"), &Z_Registration_Info_UClass_UAiDecorePlayerWithInRange, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAiDecorePlayerWithInRange), 389075881U) },
+		{ Z_Construct_UClass_UAiDecorePlayerWithInRange, UAiDecorePlayerWithInRange::StaticClass, TEXT("UAiDecorePlayerWithInRange"), &Z_Registration_Info_UClass_UAiDecorePlayerWithInRange, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAiDecorePlayerWithInRange), 149090175U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AiDecorePlayerWithInRange_h__Script_ProjectRD_1119022425(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AiDecorePlayerWithInRange_h__Script_ProjectRD_1900001291(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AiDecorePlayerWithInRange_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_AiStuff_AiDecorePlayerWithInRange_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

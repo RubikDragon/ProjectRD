@@ -1,12 +1,13 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "StateBar.h"
+
 #include "Components/Border.h"
 #include "Components/VerticalBoxSlot.h"
 #include "Components/VerticalBox.h"
 #include "Components/Image.h"
 
+#include "StateBar.h"
 
 void UStateBar::NativeOnInitialized()
 {

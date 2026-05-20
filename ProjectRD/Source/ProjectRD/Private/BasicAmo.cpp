@@ -25,9 +25,14 @@ void ABasicAmo::Tick(float DeltaTime)
 
 }
 
-int32 ABasicAmo::PickUpAmo()
+int32 ABasicAmo::GetAmoAmount()
 {
 	return amoGiveAmount;
+}
+
+void ABasicAmo::PickUpAmo()
+{
+	Destroy();
 }
 
 

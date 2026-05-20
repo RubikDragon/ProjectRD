@@ -20,7 +20,6 @@ public class ProjectRD : ModuleRules
         // Exstra
         PrivateDependencyModuleNames.AddRange(new string[] { "Niagara" });
 
-
         // Uncomment if you are using online features
         // PrivateDependencyModuleNames.Add("OnlineSubsystem");
 

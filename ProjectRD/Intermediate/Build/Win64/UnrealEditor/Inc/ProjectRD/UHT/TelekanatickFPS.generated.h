@@ -36,7 +36,7 @@ PROJECTRD_API void FSetUpAmo_DelegateWrapper(const FMulticastScriptDelegate& Set
 #define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execResetCanShot); \
 	DECLARE_FUNCTION(execChangeAmo); \
-	DECLARE_FUNCTION(execSetBulletSpawnPortsion);
+	DECLARE_FUNCTION(execSetRelaodSphereRadios);
 
 
 PROJECTRD_API UClass* Z_Construct_UClass_UTelekanatickFPS_NoRegister();

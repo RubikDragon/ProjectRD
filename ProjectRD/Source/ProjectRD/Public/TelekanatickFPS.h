@@ -32,7 +32,7 @@ public:
 
 	virtual void SetBulletSpawnPorstion_Implementation(USceneComponent* SceneComponent) override;
 
-	UFUNCTION(BlueprintCallable) void SetBulletSpawnPortsion(USphereComponent* sphereComponent);
+	UFUNCTION(BlueprintCallable) void SetRelaodSphereRadios(USphereComponent* sphereComponent);
 
 	UFUNCTION(BlueprintCallable) void ChangeAmo(int amoChange);
 

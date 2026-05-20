@@ -2,6 +2,7 @@
 
 
 #include "TelecanentickChatrureFPS.h"
+#include "Interface/FPSSystem/TelecanetickShotingFPS.h"
 #include "TelekanatickFPS.h"
 //#include "TelekanatickActorFPS.h"
 #include "Components/SphereComponent.h"
@@ -20,10 +21,11 @@ void ATelecanentickChatrureFPS::BeginPlay()
 	Super::BeginPlay();
 
 	// need to fix this  ShootingComponent
-	ShootingComponent = Cast<UTelekanatickFPS>(fpsActorComponent);
-	if (ShootingComponent) {
-		ShootingComponent->SetBulletSpawnPortsion(ReloadRadios);
-	}
 
+	
+	ShootingComponent = Cast<UTelecanetickShotingFPS>(fpsActorComponent);
+	if (ShootingComponent) {
+		ShootingComponent->SetReloadSphereRadioes(ReloadRadios);
+	}
 }
 

@@ -41,7 +41,7 @@ void UTelekanatickFPS::Shoot_Implementation()
 
 
 	if (weaponDebug)
-		UE_LOG(LogTemp, Display, TEXT("___________________________\n Amo: [%d/%d],\n Shot Bullet: %s \n___________________________"), currentAmo, maxAmo, *shotSpawnPorstion->GetComponentLocation().ToString());
+		UE_LOG(LogTemp, Display, TEXT("Amo: [%d/%d], Shot Bullet: %s"), currentAmo, maxAmo, *shotSpawnPorstion->GetComponentLocation().ToString());
 
 	// sets a timer betvine shots
 	canShot = false;
@@ -65,8 +65,8 @@ void UTelekanatickFPS::Reload_Implementation()
 		hitAmo = Cast<IAmo>(Actor);
 
 		if (hitAmo) {
-			ChangeAmo(hitAmo->PickUpAmo());
-			Actor->Destroy();
+			ChangeAmo(hitAmo->GetAmoAmount());
+			hitAmo->PickUpAmo();
 		}
 	}
 }
@@ -76,7 +76,7 @@ void UTelekanatickFPS::SetBulletSpawnPorstion_Implementation(USceneComponent* Sc
 	shotSpawnPorstion = SceneComponent;
 }
 
-void UTelekanatickFPS::SetBulletSpawnPortsion(USphereComponent* sphereComponent)
+void UTelekanatickFPS::SetRelaodSphereRadios(USphereComponent* sphereComponent)
 {
 	reloadRadiose = sphereComponent;
 }

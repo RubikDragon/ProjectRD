@@ -21,16 +21,17 @@ class UPrimitiveComponent;
 struct FHitResult;
 
 // ********** Begin Class ABulletRD ****************************************************************
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execBulletDestroy); \
 	DECLARE_FUNCTION(execHitDestroy); \
 	DECLARE_FUNCTION(execBulletHit); \
-	DECLARE_FUNCTION(execBegainOverlap);
+	DECLARE_FUNCTION(execBegainOverlap); \
+	DECLARE_FUNCTION(execFireProjetile_Implementation);
 
 
 PROJECTRD_API UClass* Z_Construct_UClass_ABulletRD_NoRegister();
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABulletRD(); \
 	friend struct Z_Construct_UClass_ABulletRD_Statics; \
@@ -38,10 +39,11 @@ private: \
 	friend PROJECTRD_API UClass* Z_Construct_UClass_ABulletRD_NoRegister(); \
 public: \
 	DECLARE_CLASS2(ABulletRD, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/ProjectRD"), Z_Construct_UClass_ABulletRD_NoRegister) \
-	DECLARE_SERIALIZER(ABulletRD)
+	DECLARE_SERIALIZER(ABulletRD) \
+	virtual UObject* _getUObject() const override { return const_cast<ABulletRD*>(this); }
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_14_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ABulletRD(ABulletRD&&) = delete; \
 	ABulletRD(const ABulletRD&) = delete; \
@@ -51,13 +53,13 @@ public: \
 	NO_API virtual ~ABulletRD();
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_9_PROLOG
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_GENERATED_BODY \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_11_PROLOG
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_14_INCLASS_NO_PURE_DECLS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_BulletRD_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

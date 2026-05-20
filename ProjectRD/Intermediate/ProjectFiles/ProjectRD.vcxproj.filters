@@ -87,6 +87,18 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\TextDialogUI.cpp">
       <Filter>Source\ProjectRD\Private</Filter>
     </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\Ai">
+      <UniqueIdentifier>{E54D77C8-C02C-3D63-8EC2-E5DB8BF5E6B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ProjectRD\Private\Ai\Tasks">
+      <UniqueIdentifier>{6E7A6AAB-854D-39A8-97CB-9A61D7FF4C8F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Ai\Tasks\AITaskIsPlayerWithInDistance.cpp">
+      <Filter>Source\ProjectRD\Private\Ai\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Ai\Tasks\AITaskSpawnActor.cpp">
+      <Filter>Source\ProjectRD\Private\Ai\Tasks</Filter>
+    </ClCompile>
     <Filter Include="Source\ProjectRD\Private\AiStuff">
       <UniqueIdentifier>{928881D2-E8B6-3B31-9948-D46B807A6758}</UniqueIdentifier>
     </Filter>
@@ -111,9 +123,6 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AITaskSendDebugMessage.cpp">
       <Filter>Source\ProjectRD\Private\AiStuff</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\AiTaskWarking.cpp">
-      <Filter>Source\ProjectRD\Private\AiStuff</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\ProjectRD\Private\AiStuff\TopDownChartureAIController.cpp">
       <Filter>Source\ProjectRD\Private\AiStuff</Filter>
     </ClCompile>
@@ -128,6 +137,42 @@
     </Filter>
     <ClCompile Include="..\..\Source\ProjectRD\Private\GameComponents\SpawnActorPrefab.cpp">
       <Filter>Source\ProjectRD\Private\GameComponents</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\Interface">
+      <UniqueIdentifier>{2F39DA6B-3C48-3BC7-A3A5-7014CA27B14D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ProjectRD\Private\Interface\FPSSystem">
+      <UniqueIdentifier>{DBB1EB94-5EF0-3FDF-9380-CFB91A156462}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Interface\FPSSystem\ShootingFPSComponent.cpp">
+      <Filter>Source\ProjectRD\Private\Interface\FPSSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Interface\FPSSystem\TelecanetickShotingFPS.cpp">
+      <Filter>Source\ProjectRD\Private\Interface\FPSSystem</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\Interface\Projectile">
+      <UniqueIdentifier>{86220F5B-BA11-345F-8C04-B8D6692562BF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Interface\Projectile\Projectile.cpp">
+      <Filter>Source\ProjectRD\Private\Interface\Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Interface\Projectile\ReturnBullet.cpp">
+      <Filter>Source\ProjectRD\Private\Interface\Projectile</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\Interface\SpecialAmo">
+      <UniqueIdentifier>{0C75A8C8-46FF-3684-BB41-DA2F846E80FD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Interface\SpecialAmo\SpecialAmo.cpp">
+      <Filter>Source\ProjectRD\Private\Interface\SpecialAmo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Interface\SpecialAmo\SpecialBulletAmo.cpp">
+      <Filter>Source\ProjectRD\Private\Interface\SpecialAmo</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\UI">
+      <UniqueIdentifier>{4D97479C-0C0F-3380-8767-76081B540B82}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\UI\ObjectBar.cpp">
+      <Filter>Source\ProjectRD\Private\UI</Filter>
     </ClCompile>
     <Filter Include="Source\ProjectRD\Public">
       <UniqueIdentifier>{45FCAFC0-6423-39D4-9962-DA4D9627048E}</UniqueIdentifier>
@@ -177,6 +222,18 @@
     <ClInclude Include="..\..\Source\ProjectRD\Public\TextDialogUI.h">
       <Filter>Source\ProjectRD\Public</Filter>
     </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\Ai">
+      <UniqueIdentifier>{4C84A87C-AD39-3A11-BCD5-499BBA36AB93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ProjectRD\Public\Ai\Tasks">
+      <UniqueIdentifier>{B14D53C9-4B40-351B-A705-5C38A7D633EE}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Ai\Tasks\AITaskIsPlayerWithInDistance.h">
+      <Filter>Source\ProjectRD\Public\Ai\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Ai\Tasks\AITaskSpawnActor.h">
+      <Filter>Source\ProjectRD\Public\Ai\Tasks</Filter>
+    </ClInclude>
     <Filter Include="Source\ProjectRD\Public\AiStuff">
       <UniqueIdentifier>{AA95836D-16DB-305E-A579-1A164B7A9F06}</UniqueIdentifier>
     </Filter>
@@ -201,9 +258,6 @@
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AITaskSendDebugMessage.h">
       <Filter>Source\ProjectRD\Public\AiStuff</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiTaskWarking.h">
-      <Filter>Source\ProjectRD\Public\AiStuff</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\TopDownChartureAIController.h">
       <Filter>Source\ProjectRD\Public\AiStuff</Filter>
     </ClInclude>
@@ -218,6 +272,42 @@
     </Filter>
     <ClInclude Include="..\..\Source\ProjectRD\Public\GameComponents\SpawnActorPrefab.h">
       <Filter>Source\ProjectRD\Public\GameComponents</Filter>
+    </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\Interface">
+      <UniqueIdentifier>{E6128915-3E51-35F8-9E43-47DEE07AC21F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ProjectRD\Public\Interface\FPSSystem">
+      <UniqueIdentifier>{C2A9EFA8-51B9-3841-8597-0BE8B57CB97B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Interface\FPSSystem\ShootingFPSComponent.h">
+      <Filter>Source\ProjectRD\Public\Interface\FPSSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Interface\FPSSystem\TelecanetickShotingFPS.h">
+      <Filter>Source\ProjectRD\Public\Interface\FPSSystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\Interface\Projectile">
+      <UniqueIdentifier>{C5871BCB-6F81-371B-A69A-3699DB073A21}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Interface\Projectile\Projectile.h">
+      <Filter>Source\ProjectRD\Public\Interface\Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Interface\Projectile\ReturnBullet.h">
+      <Filter>Source\ProjectRD\Public\Interface\Projectile</Filter>
+    </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\Interface\SpecialAmo">
+      <UniqueIdentifier>{5A1A7B0C-5369-310A-B220-3B57A270B2AB}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Interface\SpecialAmo\SpecialAmo.h">
+      <Filter>Source\ProjectRD\Public\Interface\SpecialAmo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Interface\SpecialAmo\SpecialBulletAmo.h">
+      <Filter>Source\ProjectRD\Public\Interface\SpecialAmo</Filter>
+    </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\UI">
+      <UniqueIdentifier>{05B771F3-E6A3-3E0F-8BF9-85D4BCB0D2A1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\UI\ObjectBar.h">
+      <Filter>Source\ProjectRD\Public\UI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

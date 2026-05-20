@@ -22,5 +22,7 @@ class PROJECTRD_API IAmo
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-	virtual int32 PickUpAmo() = 0;
+	virtual int32 GetAmoAmount() = 0;
+
+	virtual void PickUpAmo() = 0;
 };

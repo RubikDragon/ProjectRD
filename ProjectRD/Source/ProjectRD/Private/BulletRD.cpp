@@ -31,8 +31,12 @@ void ABulletRD::BeginPlay()
 {
 	Super::BeginPlay();
 
-	projectileControl->InitialSpeed = speed;
 	projectileControl->MaxSpeed = speed;
+}
+
+void ABulletRD::FireProjetile_Implementation(AActor* projectileFirer)
+{
+	projectileControl->InitialSpeed = speed;
 
 	Collision->OnComponentBeginOverlap.AddDynamic(this, &ABulletRD::BegainOverlap);
 

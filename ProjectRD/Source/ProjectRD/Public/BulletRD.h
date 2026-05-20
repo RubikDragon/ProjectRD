@@ -4,16 +4,22 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Interface/Projectile/Projectile.h"
+
 #include "BulletRD.generated.h"
 
 UCLASS()
-class PROJECTRD_API ABulletRD : public AActor
+class PROJECTRD_API ABulletRD : public AActor, public IProjectile
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this actor's properties
 	ABulletRD();
+
+#pragma region Interface inplementasions
+	UFUNCTION() virtual void FireProjetile_Implementation(AActor* projectileFirer) override;
+#pragma endregion
 
 protected:
 	// Called when the game starts or when spawned

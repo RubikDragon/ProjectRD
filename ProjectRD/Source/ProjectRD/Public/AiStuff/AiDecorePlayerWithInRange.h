@@ -23,4 +23,6 @@ protected:
 	virtual FString GetStaticDescription() const override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RD|Search") float distanceRange = 1000.f;
+	UPROPERTY(EditDefaultsOnly, Category = "RD|Debug") bool showDebug = false;
+
 };

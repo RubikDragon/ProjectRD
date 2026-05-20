@@ -27,7 +27,7 @@ bool UAiDecorePlayerWithInRange::CalculateRawConditionValue(UBehaviorTreeCompone
 
 	ACharacter* playerCharture = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
 
-	if (playerCharture){
+	if (!playerCharture){
 		return false;
 	}
 		
@@ -38,16 +38,16 @@ bool UAiDecorePlayerWithInRange::CalculateRawConditionValue(UBehaviorTreeCompone
 	}
 #pragma endregion
 
-	UE_LOG(LogTemp, Display, TEXT("HHHHHHHHHHHH"));
-
 	FVector aiLocation = aiPawn->GetActorLocation();
 	FVector playerLoaction = playerCharture->GetActorLocation();
 
-	float distance = FVector::Dist(playerLoaction, aiLocation);
+	float distance = FVector::Dist(aiLocation, playerLoaction);
+
+	if (showDebug)
+		UE_LOG(LogTemp, Display, TEXT("distance of ai form player %f"), distance);
 
 	if (distance <= distanceRange) {
-		UE_LOG(LogTemp, Display, TEXT("IN distance"));
-			return true;
+		return true;
 	}
 	else
 		return false;

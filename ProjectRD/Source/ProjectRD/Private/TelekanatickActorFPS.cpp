@@ -66,8 +66,8 @@ void ATelekanatickActorFPS::Reload_Implementation()
 		hitAmo = Cast<IAmo>(Actor);
 
 		if (hitAmo) {
-			ChangeAmo(hitAmo->PickUpAmo());
-			Actor->Destroy();
+			ChangeAmo(hitAmo->GetAmoAmount());
+			hitAmo->PickUpAmo();
 		}
 	}
 }

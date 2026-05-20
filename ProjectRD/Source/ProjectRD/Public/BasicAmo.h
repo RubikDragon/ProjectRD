@@ -30,5 +30,7 @@ public:
 
 
 	// Inherited via IAmo
-	virtual int32 PickUpAmo() override;
+	virtual int32 GetAmoAmount() override;
+
+	virtual void PickUpAmo() override;
 };

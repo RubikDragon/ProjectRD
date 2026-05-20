@@ -199,10 +199,10 @@ DEFINE_FUNCTION(UTelekanatickFPS::execResetCanShot)
 }
 // ********** End Class UTelekanatickFPS Function ResetCanShot *************************************
 
-// ********** Begin Class UTelekanatickFPS Function SetBulletSpawnPortsion *************************
-struct Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics
+// ********** Begin Class UTelekanatickFPS Function SetRelaodSphereRadios **************************
+struct Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics
 {
-	struct TelekanatickFPS_eventSetBulletSpawnPortsion_Parms
+	struct TelekanatickFPS_eventSetRelaodSphereRadios_Parms
 	{
 		USphereComponent* sphereComponent;
 	};
@@ -218,31 +218,31 @@ struct Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::NewProp_sphereComponent = { "sphereComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TelekanatickFPS_eventSetBulletSpawnPortsion_Parms, sphereComponent), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_sphereComponent_MetaData), NewProp_sphereComponent_MetaData) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::NewProp_sphereComponent,
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::NewProp_sphereComponent = { "sphereComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(TelekanatickFPS_eventSetRelaodSphereRadios_Parms, sphereComponent), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_sphereComponent_MetaData), NewProp_sphereComponent_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::NewProp_sphereComponent,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UTelekanatickFPS, nullptr, "SetBulletSpawnPortsion", Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::PropPointers), sizeof(Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::TelekanatickFPS_eventSetBulletSpawnPortsion_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::Function_MetaDataParams), Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::Function_MetaDataParams)},  };
-static_assert(sizeof(Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::TelekanatickFPS_eventSetBulletSpawnPortsion_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion()
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UTelekanatickFPS, nullptr, "SetRelaodSphereRadios", Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::PropPointers), sizeof(Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::TelekanatickFPS_eventSetRelaodSphereRadios_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::Function_MetaDataParams), Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::TelekanatickFPS_eventSetRelaodSphereRadios_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(UTelekanatickFPS::execSetBulletSpawnPortsion)
+DEFINE_FUNCTION(UTelekanatickFPS::execSetRelaodSphereRadios)
 {
 	P_GET_OBJECT(USphereComponent,Z_Param_sphereComponent);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->SetBulletSpawnPortsion(Z_Param_sphereComponent);
+	P_THIS->SetRelaodSphereRadios(Z_Param_sphereComponent);
 	P_NATIVE_END;
 }
-// ********** End Class UTelekanatickFPS Function SetBulletSpawnPortsion ***************************
+// ********** End Class UTelekanatickFPS Function SetRelaodSphereRadios ****************************
 
 // ********** Begin Class UTelekanatickFPS *********************************************************
 void UTelekanatickFPS::StaticRegisterNativesUTelekanatickFPS()
@@ -251,7 +251,7 @@ void UTelekanatickFPS::StaticRegisterNativesUTelekanatickFPS()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "ChangeAmo", &UTelekanatickFPS::execChangeAmo },
 		{ "ResetCanShot", &UTelekanatickFPS::execResetCanShot },
-		{ "SetBulletSpawnPortsion", &UTelekanatickFPS::execSetBulletSpawnPortsion },
+		{ "SetRelaodSphereRadios", &UTelekanatickFPS::execSetRelaodSphereRadios },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -392,7 +392,7 @@ struct Z_Construct_UClass_UTelekanatickFPS_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UTelekanatickFPS_ChangeAmo, "ChangeAmo" }, // 3034311225
 		{ &Z_Construct_UFunction_UTelekanatickFPS_ResetCanShot, "ResetCanShot" }, // 3423073669
-		{ &Z_Construct_UFunction_UTelekanatickFPS_SetBulletSpawnPortsion, "SetBulletSpawnPortsion" }, // 685640915
+		{ &Z_Construct_UFunction_UTelekanatickFPS_SetRelaodSphereRadios, "SetRelaodSphereRadios" }, // 4124963451
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -494,10 +494,10 @@ UTelekanatickFPS::~UTelekanatickFPS() {}
 struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTelekanatickFPS, UTelekanatickFPS::StaticClass, TEXT("UTelekanatickFPS"), &Z_Registration_Info_UClass_UTelekanatickFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTelekanatickFPS), 3373773451U) },
+		{ Z_Construct_UClass_UTelekanatickFPS, UTelekanatickFPS::StaticClass, TEXT("UTelekanatickFPS"), &Z_Registration_Info_UClass_UTelekanatickFPS, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTelekanatickFPS), 97865678U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_3341517764(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_2698418354(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_TelekanatickFPS_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

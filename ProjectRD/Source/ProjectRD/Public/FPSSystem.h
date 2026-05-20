@@ -4,11 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
-#include "FPSSystem.generated.h"
 
-// Interfaces
-// https://www.youtube.com/watch?v=MJwyZKR-rKo C++
-// https://www.youtube.com/watch?v=tocUOUrGiAk Blueprint
+#include "FPSSystem.generated.h"
 
 // This class does not need to be modified.
 UINTERFACE(MinimalAPI, BlueprintType)
