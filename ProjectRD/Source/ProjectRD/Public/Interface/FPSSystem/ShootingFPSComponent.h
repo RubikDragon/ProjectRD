@@ -107,6 +107,11 @@ protected:
 	UPROPERTY() FTimerHandle reloadTimerTH;
 #pragma endregion
 
+#pragma region Temporay Values
+	UPROPERTY() AActor* spawnedBullet;
+#pragma endregion
+
+
 #pragma region Debug
 	UPROPERTY(EditDefaultsOnly, Category = "Debug|RD") bool weaponDebug = false;
 #pragma endregion

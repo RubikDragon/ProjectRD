@@ -87,9 +87,27 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\TextDialogUI.cpp">
       <Filter>Source\ProjectRD\Private</Filter>
     </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\Actors">
+      <UniqueIdentifier>{3E9A52EC-9C47-3458-8669-0A4F2D2FFB74}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Actors\MoveActorPannel.cpp">
+      <Filter>Source\ProjectRD\Private\Actors</Filter>
+    </ClCompile>
     <Filter Include="Source\ProjectRD\Private\Ai">
       <UniqueIdentifier>{E54D77C8-C02C-3D63-8EC2-E5DB8BF5E6B9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\ProjectRD\Private\Ai\BBComponents">
+      <UniqueIdentifier>{93690402-7BC9-38E0-B9A0-EE94F6BAE4DF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Ai\BBComponents\SetPlayerValueToBB.cpp">
+      <Filter>Source\ProjectRD\Private\Ai\BBComponents</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\Ai\Service">
+      <UniqueIdentifier>{F9023F5B-2C69-304E-B789-A5F18D6C859E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Ai\Service\CanSeeActor.cpp">
+      <Filter>Source\ProjectRD\Private\Ai\Service</Filter>
+    </ClCompile>
     <Filter Include="Source\ProjectRD\Private\Ai\Tasks">
       <UniqueIdentifier>{6E7A6AAB-854D-39A8-97CB-9A61D7FF4C8F}</UniqueIdentifier>
     </Filter>
@@ -222,9 +240,27 @@
     <ClInclude Include="..\..\Source\ProjectRD\Public\TextDialogUI.h">
       <Filter>Source\ProjectRD\Public</Filter>
     </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\Actors">
+      <UniqueIdentifier>{A63744D5-CD6D-3BCD-8507-27BA3497DE08}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Actors\MoveActorPannel.h">
+      <Filter>Source\ProjectRD\Public\Actors</Filter>
+    </ClInclude>
     <Filter Include="Source\ProjectRD\Public\Ai">
       <UniqueIdentifier>{4C84A87C-AD39-3A11-BCD5-499BBA36AB93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\ProjectRD\Public\Ai\BBComponents">
+      <UniqueIdentifier>{60AE68FB-64DC-3B17-A86C-C4D31D15F37D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Ai\BBComponents\SetPlayerValueToBB.h">
+      <Filter>Source\ProjectRD\Public\Ai\BBComponents</Filter>
+    </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\Ai\Service">
+      <UniqueIdentifier>{04FE8A61-E181-37A6-95DD-F5D30872107C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Ai\Service\CanSeeActor.h">
+      <Filter>Source\ProjectRD\Public\Ai\Service</Filter>
+    </ClInclude>
     <Filter Include="Source\ProjectRD\Public\Ai\Tasks">
       <UniqueIdentifier>{B14D53C9-4B40-351B-A705-5C38A7D633EE}</UniqueIdentifier>
     </Filter>

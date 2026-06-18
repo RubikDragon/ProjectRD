@@ -12,7 +12,7 @@ public class ProjectRD : ModuleRules
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
 
         // AI
-        PrivateDependencyModuleNames.AddRange(new string[] { "AiModule", "NavigationSystem" });
+        PrivateDependencyModuleNames.AddRange(new string[] { "AiModule", "NavigationSystem", "GameplayTasks" }); //
 
         // UI
         PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });

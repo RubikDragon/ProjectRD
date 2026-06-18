@@ -294,7 +294,13 @@ struct Z_Construct_UClass_UObjectBar_Statics
 		{ "ModuleRelativePath", "Public/UI/ObjectBar.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_activeCount_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/// <summary>\n/// current nummber of active bars shown\n/// </summary>\n" },
+#endif
 		{ "ModuleRelativePath", "Public/UI/ObjectBar.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "<summary>\ncurrent nummber of active bars shown\n</summary>" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_objectLines_MetaData[] = {
 #if !UE_BUILD_SHIPPING
@@ -452,10 +458,10 @@ struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_P
 		{ FObjectColor::StaticStruct, Z_Construct_UScriptStruct_FObjectColor_Statics::NewStructOps, TEXT("ObjectColor"), &Z_Registration_Info_UScriptStruct_FObjectColor, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FObjectColor), 746464672U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UObjectBar, UObjectBar::StaticClass, TEXT("UObjectBar"), &Z_Registration_Info_UClass_UObjectBar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UObjectBar), 4269358302U) },
+		{ Z_Construct_UClass_UObjectBar, UObjectBar::StaticClass, TEXT("UObjectBar"), &Z_Registration_Info_UClass_UObjectBar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UObjectBar), 3408612487U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_UI_ObjectBar_h__Script_ProjectRD_3830679285(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_UI_ObjectBar_h__Script_ProjectRD_4089865901(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_UI_ObjectBar_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_UI_ObjectBar_h__Script_ProjectRD_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_UI_ObjectBar_h__Script_ProjectRD_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_UI_ObjectBar_h__Script_ProjectRD_Statics::ScriptStructInfo),
 	nullptr, 0);

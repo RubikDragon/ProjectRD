@@ -307,6 +307,15 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\TextDialogUI.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Actors\MoveActorPannel.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Ai\BBComponents\SetPlayerValueToBB.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Ai\Service\CanSeeActor.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\ProjectRD\Private\Ai\Tasks\AITaskIsPlayerWithInDistance.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -379,6 +388,9 @@
     <ClInclude Include="..\..\Source\ProjectRD\Public\TelekanatickActorFPS.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\TelekanatickFPS.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\TextDialogUI.h"/>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Actors\MoveActorPannel.h"/>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Ai\BBComponents\SetPlayerValueToBB.h"/>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Ai\Service\CanSeeActor.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\Ai\Tasks\AITaskIsPlayerWithInDistance.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\Ai\Tasks\AITaskSpawnActor.h"/>
     <ClInclude Include="..\..\Source\ProjectRD\Public\AiStuff\AiDecorePlayerWithInRange.h"/>

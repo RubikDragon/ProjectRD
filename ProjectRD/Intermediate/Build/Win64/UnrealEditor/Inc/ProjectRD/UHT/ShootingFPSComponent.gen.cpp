@@ -14,6 +14,7 @@ void EmptyLinkFunctionForGeneratedCodeShootingFPSComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTimerHandle();
@@ -399,6 +400,9 @@ struct Z_Construct_UClass_UShootingFPSComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_reloadTimerTH_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Interface/FPSSystem/ShootingFPSComponent.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_spawnedBullet_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Interface/FPSSystem/ShootingFPSComponent.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_weaponDebug_MetaData[] = {
 		{ "Category", "Debug|RD" },
 		{ "ModuleRelativePath", "Public/Interface/FPSSystem/ShootingFPSComponent.h" },
@@ -428,6 +432,7 @@ struct Z_Construct_UClass_UShootingFPSComponent_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_canReload;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_timeBetvineShotsTH;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_reloadTimerTH;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_spawnedBullet;
 	static void NewProp_weaponDebug_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_weaponDebug;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
@@ -477,6 +482,7 @@ void Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_canReload_SetBit(
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_canReload = { "canReload", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UShootingFPSComponent), &Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_canReload_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_canReload_MetaData), NewProp_canReload_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_timeBetvineShotsTH = { "timeBetvineShotsTH", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UShootingFPSComponent, timeBetvineShotsTH), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_timeBetvineShotsTH_MetaData), NewProp_timeBetvineShotsTH_MetaData) }; // 3834150579
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_reloadTimerTH = { "reloadTimerTH", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UShootingFPSComponent, reloadTimerTH), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_reloadTimerTH_MetaData), NewProp_reloadTimerTH_MetaData) }; // 3834150579
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_spawnedBullet = { "spawnedBullet", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UShootingFPSComponent, spawnedBullet), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_spawnedBullet_MetaData), NewProp_spawnedBullet_MetaData) };
 void Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_weaponDebug_SetBit(void* Obj)
 {
 	((UShootingFPSComponent*)Obj)->weaponDebug = 1;
@@ -505,6 +511,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UShooting
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_canReload,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_timeBetvineShotsTH,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_reloadTimerTH,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_spawnedBullet,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UShootingFPSComponent_Statics::NewProp_weaponDebug,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UShootingFPSComponent_Statics::PropPointers) < 2048);
@@ -547,10 +554,10 @@ UShootingFPSComponent::~UShootingFPSComponent() {}
 struct Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Interface_FPSSystem_ShootingFPSComponent_h__Script_ProjectRD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UShootingFPSComponent, UShootingFPSComponent::StaticClass, TEXT("UShootingFPSComponent"), &Z_Registration_Info_UClass_UShootingFPSComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UShootingFPSComponent), 4280902970U) },
+		{ Z_Construct_UClass_UShootingFPSComponent, UShootingFPSComponent::StaticClass, TEXT("UShootingFPSComponent"), &Z_Registration_Info_UClass_UShootingFPSComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UShootingFPSComponent), 1060929854U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Interface_FPSSystem_ShootingFPSComponent_h__Script_ProjectRD_176184255(TEXT("/Script/ProjectRD"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Interface_FPSSystem_ShootingFPSComponent_h__Script_ProjectRD_4208174170(TEXT("/Script/ProjectRD"),
 	Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Interface_FPSSystem_ShootingFPSComponent_h__Script_ProjectRD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Interface_FPSSystem_ShootingFPSComponent_h__Script_ProjectRD_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

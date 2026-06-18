@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "BulletRD.h"
+#include "Interface/Projectile/Projectile.h"
 
 #include "Interface/FPSSystem/ShootingFPSComponent.h"
 
@@ -43,7 +44,11 @@ void UShootingFPSComponent::Shoot_Implementation()
 		return;
 	}
 
-	GetWorld()->SpawnActor<AActor>(bullet, shotSpawnPorstion->GetComponentLocation(), shotSpawnPorstion->GetComponentRotation());
+	spawnedBullet = GetWorld()->SpawnActor<AActor>(bullet, shotSpawnPorstion->GetComponentLocation(), shotSpawnPorstion->GetComponentRotation());
+
+	if (spawnedBullet->Implements<UProjectile>()) 
+		IProjectile::Execute_FireProjetile(spawnedBullet, GetOwner());
+
 	ChangeAmo(-1);
 
 	if (weaponDebug)

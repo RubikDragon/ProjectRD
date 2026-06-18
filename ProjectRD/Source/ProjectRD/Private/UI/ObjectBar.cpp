@@ -77,22 +77,16 @@ void UObjectBar::SetMetter(TArray<TSubclassOf<AActor>> actorPtr)
 		
 	}
 
+	activeCount = FMath::Clamp(activeCount, 0, maxLinesIndex);
 }
 
 void UObjectBar::ChangeMetter(TSubclassOf<AActor> actorPrefab, bool wasAdded)
 {
-	// makes sure the number is not above limmit
-	activeCount = FMath::Clamp(activeCount, 0, objectLines.Num() - 1);
-
-	//   19 = maxLinesIndex  20 = objectLines.Num()           -    0/19 = activeCount
-
-	// 
-
 
 	if (wasAdded) 
 	{
 		activeCount++;
-		activeCount = FMath::Clamp(activeCount, 0, objectLines.Num()- 1);
+		activeCount = FMath::Clamp(activeCount, 0, maxLinesIndex);
 
 		if (rewirseOrdor)
 			lineIndex = maxLinesIndex - activeCount;
@@ -102,11 +96,17 @@ void UObjectBar::ChangeMetter(TSubclassOf<AActor> actorPrefab, bool wasAdded)
 		handleLineIdentety(objectLines[lineIndex], actorPrefab);
 		objectLines[lineIndex]->SetVisibility(ESlateVisibility::Visible);
 
-
-		UE_LOGFMT(LogCore, Warning, "grid length {l}, current count {i}", ("l", objectLines.Num()), ("i", activeCount));
+		UE_LOGFMT(LogCore, Warning, "Reload: line index {l}, current count {i}", ("l", lineIndex), ("i", activeCount));
 	}
 	else 
 	{
+		if (activeCount == -1) {
+			UE_LOGFMT(LogCore, Error, "bullet count was not correctly counted my UI. and ");
+		}
+
+		activeCount = FMath::Clamp(activeCount, 0, maxLinesIndex);
+
+
 		if (rewirseOrdor)
 			lineIndex = maxLinesIndex - activeCount;
 		else
@@ -115,10 +115,11 @@ void UObjectBar::ChangeMetter(TSubclassOf<AActor> actorPrefab, bool wasAdded)
 
 		TurnOffLine(objectLines[lineIndex]);
 
-		activeCount--;
-		activeCount = FMath::Clamp(activeCount, 0, objectLines.Num() - 1);
 
-		UE_LOGFMT(LogCore, Warning, "grid length {l}, current count {i}", ("l", objectLines.Num()), ("i", activeCount));
+		UE_LOGFMT(LogCore, Warning, "Shoot: line index {l}, current count {i}", ("l", lineIndex), ("i", activeCount));
+
+		activeCount--;
+		activeCount = FMath::Clamp(activeCount, -1, maxLinesIndex);
 	}
 }
 

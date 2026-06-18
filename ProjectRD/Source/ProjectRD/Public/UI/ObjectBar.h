@@ -79,6 +79,9 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, Category = "_RD|Components", meta = (BindWidget)) TObjectPtr< UUniformGridPanel> ObjectGrid = nullptr;
 
+	/// <summary>
+	/// current nummber of active bars shown
+	/// </summary>
 	UPROPERTY() int32 activeCount;
 
 	// if/ when posseblue cut this down to UUSerWigdet or samaler

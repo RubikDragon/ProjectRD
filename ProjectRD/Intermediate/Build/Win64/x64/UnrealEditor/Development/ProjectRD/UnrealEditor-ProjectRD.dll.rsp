@@ -43,6 +43,7 @@
 "C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProjectRD/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/AIModule/UnrealEditor-AIModule.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/NavigationSystem/UnrealEditor-NavigationSystem.lib"
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/GameplayTasks/UnrealEditor-GameplayTasks.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Slate/UnrealEditor-Slate.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/SlateCore/UnrealEditor-SlateCore.lib"
 "../Plugins/FX/Niagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/Niagara/UnrealEditor-Niagara.lib"

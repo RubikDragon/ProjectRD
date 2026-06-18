@@ -22,7 +22,6 @@ void ATopDownChartureAIController::BeginPlay()
 
 		RunBehaviorTree(behaviorTree.Get());
 		behaviorTreeComponentTurtural->StartTree(*behaviorTree.Get());
-
 	}
 }
 
