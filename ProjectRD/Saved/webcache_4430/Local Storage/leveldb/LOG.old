@@ -1,3 +1,14 @@
-2026/06/18-11:54:33.120 67e8 Reusing MANIFEST C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
-2026/06/18-11:54:33.126 67e8 Recovering log #583
-2026/06/18-11:54:33.127 67e8 Reusing old log C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Saved/webcache_4430\Local Storage\leveldb/000583.log 
+2026/10/16-12:58:51.822 77c8 Reusing MANIFEST C:/Users/Alexa/Desktop/Unreal projects/ProjectRD/ProjectRD/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2026/10/16-12:58:51.823 77c8 Recovering log #749
+2026/10/16-12:58:51.823 77c8 Level-0 table #751: started
+2026/10/16-12:58:51.825 77c8 Level-0 table #751: 92049 bytes OK
+2026/10/16-12:58:51.827 77c8 Delete type=0 #749
+2026/10/16-12:58:51.827 6dc4 Compacting 4@0 + 1@1 files
+2026/10/16-12:58:51.830 6dc4 Generated table #753@0: 5 keys, 30991 bytes
+2026/10/16-12:58:51.830 6dc4 Compacted 4@0 + 1@1 files => 30991 bytes
+2026/10/16-12:58:51.830 6dc4 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/10/16-12:58:51.831 6dc4 Delete type=2 #740
+2026/10/16-12:58:51.831 6dc4 Delete type=2 #742
+2026/10/16-12:58:51.831 6dc4 Delete type=2 #745
+2026/10/16-12:58:51.831 6dc4 Delete type=2 #748
+2026/10/16-12:58:51.831 6dc4 Delete type=2 #751

@@ -16,10 +16,12 @@ ABulletRD::ABulletRD()
 
 	BulletPartical = CreateDefaultSubobject<UNiagaraComponent>(TEXT("Bullet Partical"));
 	SetRootComponent(BulletPartical);
+
 	Collision = CreateDefaultSubobject<USphereComponent>(TEXT("Collision"));
 	Collision->SetupAttachment(BulletPartical);
 
 	projectileControl = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileControls"));
+	// projectileControl->SetUpdatedComponent(Collision);
 	projectileControl->ProjectileGravityScale = 0;
 
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -29,13 +31,16 @@ ABulletRD::ABulletRD()
 // Called when the game starts or when spawned
 void ABulletRD::BeginPlay()
 {
-	Super::BeginPlay();
 
 	projectileControl->MaxSpeed = speed;
+
+	Super::BeginPlay();
+
 }
 
 void ABulletRD::FireProjetile_Implementation(AActor* projectileFirer)
 {
+	// need to make a methode here that starts teh projectile aspose to now where it starts on spawn
 	projectileControl->InitialSpeed = speed;
 
 	Collision->OnComponentBeginOverlap.AddDynamic(this, &ABulletRD::BegainOverlap);

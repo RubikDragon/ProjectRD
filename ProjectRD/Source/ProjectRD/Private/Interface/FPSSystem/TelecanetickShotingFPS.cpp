@@ -29,8 +29,8 @@ void UTelecanetickShotingFPS::BeginPlay()
 
 void UTelecanetickShotingFPS::Shoot_Implementation()
 {
-	if (!shotSpawnPorstion) {
-
+	if (!shotSpawnPorstion)
+	{
 		UE_LOG(LogTemp, Error, TEXT("%s on %s is missing a scene porstion, to spawn bullets at"), *GetName(), *GetOwner()->GetName());
 		return;
 	}

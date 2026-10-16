@@ -29,8 +29,6 @@ void UObjectBar::NativeOnInitialized()
 	UpdateWigdet();
 }
 
-
-
 void UObjectBar::OnDesignerChanged(const FDesignerChangedEventArgs& EventArgs)
 {
 	Super::OnDesignerChanged(EventArgs);
@@ -77,7 +75,7 @@ void UObjectBar::SetMetter(TArray<TSubclassOf<AActor>> actorPtr)
 		
 	}
 
-	activeCount = FMath::Clamp(activeCount, 0, maxLinesIndex);
+	activeCount = FMath::Clamp(activeCount, -1, maxLinesIndex);
 }
 
 void UObjectBar::ChangeMetter(TSubclassOf<AActor> actorPrefab, bool wasAdded)
@@ -86,7 +84,7 @@ void UObjectBar::ChangeMetter(TSubclassOf<AActor> actorPrefab, bool wasAdded)
 	if (wasAdded) 
 	{
 		activeCount++;
-		activeCount = FMath::Clamp(activeCount, 0, maxLinesIndex);
+		activeCount = FMath::Clamp(activeCount, -1, maxLinesIndex);
 
 		if (rewirseOrdor)
 			lineIndex = maxLinesIndex - activeCount;

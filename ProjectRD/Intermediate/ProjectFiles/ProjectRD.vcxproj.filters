@@ -93,6 +93,9 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\Actors\MoveActorPannel.cpp">
       <Filter>Source\ProjectRD\Private\Actors</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Actors\SpawnObjectArraer.cpp">
+      <Filter>Source\ProjectRD\Private\Actors</Filter>
+    </ClCompile>
     <Filter Include="Source\ProjectRD\Private\Ai">
       <UniqueIdentifier>{E54D77C8-C02C-3D63-8EC2-E5DB8BF5E6B9}</UniqueIdentifier>
     </Filter>
@@ -156,6 +159,9 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\GameComponents\SpawnActorPrefab.cpp">
       <Filter>Source\ProjectRD\Private\GameComponents</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\GameComponents\SpawnObjects.cpp">
+      <Filter>Source\ProjectRD\Private\GameComponents</Filter>
+    </ClCompile>
     <Filter Include="Source\ProjectRD\Private\Interface">
       <UniqueIdentifier>{2F39DA6B-3C48-3BC7-A3A5-7014CA27B14D}</UniqueIdentifier>
     </Filter>
@@ -186,11 +192,23 @@
     <ClCompile Include="..\..\Source\ProjectRD\Private\Interface\SpecialAmo\SpecialBulletAmo.cpp">
       <Filter>Source\ProjectRD\Private\Interface\SpecialAmo</Filter>
     </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\Map">
+      <UniqueIdentifier>{C4FAC452-6E42-3991-AB91-8BE23F725A5F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\Map\WaveSystemRD.cpp">
+      <Filter>Source\ProjectRD\Private\Map</Filter>
+    </ClCompile>
     <Filter Include="Source\ProjectRD\Private\UI">
       <UniqueIdentifier>{4D97479C-0C0F-3380-8767-76081B540B82}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ProjectRD\Private\UI\ObjectBar.cpp">
       <Filter>Source\ProjectRD\Private\UI</Filter>
+    </ClCompile>
+    <Filter Include="Source\ProjectRD\Private\VisualEffect">
+      <UniqueIdentifier>{DBD2AD35-AA74-3E2B-9DAC-4B3E64877CB4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ProjectRD\Private\VisualEffect\SpinTelecanetickAmo.cpp">
+      <Filter>Source\ProjectRD\Private\VisualEffect</Filter>
     </ClCompile>
     <Filter Include="Source\ProjectRD\Public">
       <UniqueIdentifier>{45FCAFC0-6423-39D4-9962-DA4D9627048E}</UniqueIdentifier>
@@ -244,6 +262,9 @@
       <UniqueIdentifier>{A63744D5-CD6D-3BCD-8507-27BA3497DE08}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\ProjectRD\Public\Actors\MoveActorPannel.h">
+      <Filter>Source\ProjectRD\Public\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Actors\SpawnObjectArraer.h">
       <Filter>Source\ProjectRD\Public\Actors</Filter>
     </ClInclude>
     <Filter Include="Source\ProjectRD\Public\Ai">
@@ -309,6 +330,9 @@
     <ClInclude Include="..\..\Source\ProjectRD\Public\GameComponents\SpawnActorPrefab.h">
       <Filter>Source\ProjectRD\Public\GameComponents</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\GameComponents\SpawnObjects.h">
+      <Filter>Source\ProjectRD\Public\GameComponents</Filter>
+    </ClInclude>
     <Filter Include="Source\ProjectRD\Public\Interface">
       <UniqueIdentifier>{E6128915-3E51-35F8-9E43-47DEE07AC21F}</UniqueIdentifier>
     </Filter>
@@ -339,11 +363,23 @@
     <ClInclude Include="..\..\Source\ProjectRD\Public\Interface\SpecialAmo\SpecialBulletAmo.h">
       <Filter>Source\ProjectRD\Public\Interface\SpecialAmo</Filter>
     </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\Map">
+      <UniqueIdentifier>{E188E69D-E986-3088-B5AB-4602A6689657}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\Map\WaveSystemRD.h">
+      <Filter>Source\ProjectRD\Public\Map</Filter>
+    </ClInclude>
     <Filter Include="Source\ProjectRD\Public\UI">
       <UniqueIdentifier>{05B771F3-E6A3-3E0F-8BF9-85D4BCB0D2A1}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\ProjectRD\Public\UI\ObjectBar.h">
       <Filter>Source\ProjectRD\Public\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\ProjectRD\Public\VisualEffect">
+      <UniqueIdentifier>{A966E9D2-1721-3076-9D39-3106ACB64305}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ProjectRD\Public\VisualEffect\SpinTelecanetickAmo.h">
+      <Filter>Source\ProjectRD\Public\VisualEffect</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

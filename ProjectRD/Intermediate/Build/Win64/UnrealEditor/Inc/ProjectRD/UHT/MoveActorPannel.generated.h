@@ -16,10 +16,18 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
+
 // ********** Begin Class AMoveActorPannel *********************************************************
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execBegainOverlap);
+
+
 PROJECTRD_API UClass* Z_Construct_UClass_AMoveActorPannel_NoRegister();
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMoveActorPannel(); \
 	friend struct Z_Construct_UClass_AMoveActorPannel_Statics; \
@@ -30,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(AMoveActorPannel)
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_20_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMoveActorPannel(AMoveActorPannel&&) = delete; \
 	AMoveActorPannel(const AMoveActorPannel&) = delete; \
@@ -40,12 +48,13 @@ public: \
 	NO_API virtual ~AMoveActorPannel();
 
 
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_9_PROLOG
-#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_12_GENERATED_BODY \
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_11_PROLOG
+#define FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_20_INCLASS_NO_PURE_DECLS \
+	FID_Users_Alexa_Desktop_Unreal_projects_ProjectRD_ProjectRD_Source_ProjectRD_Public_Actors_MoveActorPannel_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

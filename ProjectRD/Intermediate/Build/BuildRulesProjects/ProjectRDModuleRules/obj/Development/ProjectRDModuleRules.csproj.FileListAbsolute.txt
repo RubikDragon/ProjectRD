@@ -41,3 +41,4 @@ C:\Users\Alexa\Desktop\Unreal projects\ProjectRD\ProjectRD\Intermediate\Build\Bu
 C:\Users\Alexa\Desktop\Unreal projects\ProjectRD\ProjectRD\Intermediate\Build\BuildRulesProjects\ProjectRDModuleRules\obj\Development\ProjectRDModuleRules.dll
 C:\Users\Alexa\Desktop\Unreal projects\ProjectRD\ProjectRD\Intermediate\Build\BuildRulesProjects\ProjectRDModuleRules\obj\Development\refint\ProjectRDModuleRules.dll
 C:\Users\Alexa\Desktop\Unreal projects\ProjectRD\ProjectRD\Intermediate\Build\BuildRulesProjects\ProjectRDModuleRules\obj\Development\ProjectRDModuleRules.pdb
+C:\Users\Alexa\Desktop\Unreal projects\ProjectRD\ProjectRD\Intermediate\Build\BuildRulesProjects\ProjectRDModuleRules\obj\Development\ProjectRDModuleRules.sourcelink.json

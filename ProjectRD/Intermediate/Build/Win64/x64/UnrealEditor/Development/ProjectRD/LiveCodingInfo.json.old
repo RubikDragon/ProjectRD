@@ -1,7 +1,7 @@
 {
 	"RemapUnityFiles": 
 	{
-		"Module.ProjectRD.cpp.obj": [
+		"Module.ProjectRD.1.cpp.obj": [
 			"AiDecorePlayerWithInRange.gen.cpp.obj",
 			"AIStateTreeBlueprint.gen.cpp.obj",
 			"AITaskAttack.gen.cpp.obj",
@@ -20,18 +20,24 @@
 			"CanSeeActor.gen.cpp.obj",
 			"FPSSystem.gen.cpp.obj",
 			"HealtSystem.gen.cpp.obj",
+			"MoveActorPannel.gen.cpp.obj",
 			"ObjectBar.gen.cpp.obj",
 			"PlayerChartureFPS.gen.cpp.obj",
 			"PlayerControllerFPS.gen.cpp.obj",
 			"Projectile.gen.cpp.obj",
 			"ProjectRD.init.gen.cpp.obj",
 			"RDCustomUI.gen.cpp.obj",
-			"ReturnBullet.gen.cpp.obj",
+			"ReturnBullet.gen.cpp.obj"
+		],
+		"Module.ProjectRD.2.cpp.obj": [
 			"SetPlayerValueToBB.gen.cpp.obj",
 			"ShootingFPSComponent.gen.cpp.obj",
 			"SpawnActorPrefab.gen.cpp.obj",
+			"SpawnObjectArraer.gen.cpp.obj",
+			"SpawnObjects.gen.cpp.obj",
 			"SpecialAmo.gen.cpp.obj",
 			"SpecialBulletAmo.gen.cpp.obj",
+			"SpinTelecanetickAmo.gen.cpp.obj",
 			"StateBar.gen.cpp.obj",
 			"TelecanentickChatrureFPS.gen.cpp.obj",
 			"TelecanetickShotingFPS.gen.cpp.obj",
@@ -39,7 +45,12 @@
 			"TelekanatickFPS.gen.cpp.obj",
 			"TextDialogUI.gen.cpp.obj",
 			"TopDownChartureAIController.gen.cpp.obj",
+			"WaveSystemRD.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
+			"MoveActorPannel.cpp.obj"
+		],
+		"Module.ProjectRD.3.cpp.obj": [
+			"SpawnObjectArraer.cpp.obj",
 			"AIStateTreeBlueprint.cpp.obj",
 			"AiDecorePlayerWithInRange.cpp.obj",
 			"AITaskAttack.cpp.obj",
@@ -60,6 +71,7 @@
 			"BasicChartureRD.cpp.obj",
 			"FPSSystem.cpp.obj",
 			"SpawnActorPrefab.cpp.obj",
+			"SpawnObjects.cpp.obj",
 			"HealtSystem.cpp.obj",
 			"ShootingFPSComponent.cpp.obj",
 			"TelecanetickShotingFPS.cpp.obj",
@@ -67,6 +79,7 @@
 			"ReturnBullet.cpp.obj",
 			"SpecialAmo.cpp.obj",
 			"SpecialBulletAmo.cpp.obj",
+			"WaveSystemRD.cpp.obj",
 			"PlayerChartureFPS.cpp.obj",
 			"PlayerControllerFPS.cpp.obj",
 			"RDCustomUI.cpp.obj",
@@ -76,6 +89,7 @@
 			"TelekanatickFPS.cpp.obj",
 			"TextDialogUI.cpp.obj",
 			"ObjectBar.cpp.obj",
+			"SpinTelecanetickAmo.cpp.obj",
 			"ProjectRD.cpp.obj"
 		]
 	}

@@ -38,7 +38,7 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "RD|Components") class UProjectileMovementComponent* projectileControl;
 
-	UPROPERTY(EditDefaultsOnly, Category = "RD|BulletStates") float speed;
+	UPROPERTY(EditDefaultsOnly, Category = "RD|BulletStates") float speed = 500;
 	UPROPERTY(EditDefaultsOnly, Category = "RD|BulletStates") float damage;
 	UPROPERTY(EditDefaultsOnly, Category = "RD|BulletStates") TSubclassOf<UDamageType> damageType;
 

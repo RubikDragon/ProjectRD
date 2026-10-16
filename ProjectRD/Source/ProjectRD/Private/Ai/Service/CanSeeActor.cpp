@@ -44,8 +44,8 @@ void UCanSeeActor::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory
 
 	if (!targetAct)
 	{
+		//UE_LOGFMT(LogCore, Error, "{KeyName} is missing a Actor value", ("KeyName", targetActor.SelectedKeyName));
 		return;
-		UE_LOGFMT(LogCore, Error, "{KeyName} is missing a Actor value", ("KeyName", targetActor.SelectedKeyName));
 	}
 
 	hasHit = GetWorld()->LineTraceSingleByChannel(hit, rayStart, rayEnd, ECC_Pawn, FCollisionQueryParams(), FCollisionResponseParams());
